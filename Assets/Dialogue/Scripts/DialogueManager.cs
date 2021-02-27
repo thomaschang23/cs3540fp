@@ -4,49 +4,64 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour {
-
+  public float letterWriteSpeed = 0.005f;
   public Text nameView;
   public Text dialogueView;
-
+  public Text promptView;
   public Animator animator;
 
-  private Queue<string> sentences;
-
-  // Start is called before the first frame update
-  void Start() {
-    sentences = new Queue<string>();
-  }
+  private Tree tree;
 
   public void StartDialogue(Dialogue dialogue) {
     animator.SetBool("IsOpen", true);
 
     nameView.text = dialogue.name;
+    tree = dialogue.tree;
 
-    sentences.Clear();
-
-    foreach (string sentence in dialogue.sentences) {
-      sentences.Enqueue(sentence);
-    }
-
-    DisplayNextSentence();
+    DisplayCurrentSentence();
   }
 
-  public void DisplayNextSentence() {
-    if (sentences.Count == 0) {
+  public void DisplayNextSentence(int prompt) {
+    int childrenLength = tree.children.Length;
+
+    if (childrenLength == 0) {
       EndDialogue();
       return;
+    } else if (childrenLength > prompt) {
+      tree = tree.children[prompt];
+    } else {
+      tree = tree.children[childrenLength - 1];
     }
 
-    string sentence = sentences.Dequeue();
-    StopAllCoroutines();
-    StartCoroutine(TypeSentence(sentence));
+    DisplayCurrentSentence();
   }
 
-  IEnumerator TypeSentence(string sentence) {
-    dialogueView.text = "";
+  private void DisplayCurrentSentence() {
+    string prompts = "";
+    int childrenLength = tree.children.Length;
+
+    if (childrenLength > 1) {
+      for (int i = 0; i < childrenLength; i++) {
+        prompts += (i + 1).ToString() + ". " + tree.children[i].prompt;
+        if (i < childrenLength - 1) {
+          prompts += "\n";
+        }
+      }
+    } else if (childrenLength == 1) {
+      prompts = "1. (Continue.)";
+    } else {
+      prompts = "1. (End.)";
+    }
+
+    StopAllCoroutines();
+    StartCoroutine(TypeSentence(dialogueView, tree.sentence));
+    StartCoroutine(TypeSentence(promptView, prompts));
+  }
+  IEnumerator TypeSentence(Text view, string sentence) {
+    view.text = "";
     foreach (char letter in sentence.ToCharArray()) {
-      dialogueView.text += letter;
-      yield return null;
+      view.text += letter;
+      yield return new WaitForSeconds(letterWriteSpeed);
     }
   }
 
