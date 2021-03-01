@@ -13,12 +13,15 @@ public class PlayerMovement : MonoBehaviour
     public Camera playerCam;
     public float sensitivity = 2.0f;
     public float vertLookLimit = 45.0f;
+    public float dialogueTriggerDistance = 10.0f;
 
     CharacterController cc;
     Vector3 moveDir = Vector3.zero;
     float rX = 0;
 
-    private bool mouseUnlocked;
+    private static bool mouseUnlocked;
+
+    private GameObject npc;
 
     [HideInInspector]
     public bool canMove = true;
@@ -35,6 +38,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (npc != null && Input.GetButtonDown("Fire1"))
+        {
+            DialogueManager.TriggerDialogue(npc);
+        }
         if (Input.GetKeyDown(KeyCode.LeftAlt))
         {
             mouseChange();
@@ -90,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void mouseChange()
+    public static void mouseChange()
     {
         mouseUnlocked = !mouseUnlocked;
         Cursor.visible = !Cursor.visible;
@@ -104,4 +111,18 @@ public class PlayerMovement : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
         }
     }
+
+  public void FixedUpdate() {
+    RaycastHit hit;
+    Ray ray = playerCam.ScreenPointToRay(Input.mousePosition);
+    if (
+      Physics.Raycast(ray, out hit, dialogueTriggerDistance)
+      && hit.collider.CompareTag("DialogueNPC")
+    ) {
+      npc = hit.collider.gameObject;
+      FindObjectOfType<DialogueManager>().ShowDialogueHint();
+    } else {
+      FindObjectOfType<DialogueManager>().HideDialogueHint();
+    }
+  }
 }

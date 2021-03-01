@@ -5,20 +5,27 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour {
   public float letterWriteSpeed = 0.005f;
+  public Text dialogueHint;
   public Text nameView;
   public Text dialogueView;
   public Text promptView;
   public Animator animator;
 
   private Tree tree;
+  private bool isDialogueOpen;
 
   public void StartDialogue(Dialogue dialogue) {
-    animator.SetBool("IsOpen", true);
+    if (!isDialogueOpen) {
+      PlayerMovement.mouseChange();
 
-    nameView.text = dialogue.name;
-    tree = dialogue.tree;
+      isDialogueOpen = true;
+      animator.SetBool("IsOpen", true);
 
-    DisplayCurrentSentence();
+      nameView.text = dialogue.name;
+      tree = dialogue.tree;
+
+      DisplayCurrentSentence();
+    }
   }
 
   public void DisplayNextSentence(int prompt) {
@@ -48,7 +55,11 @@ public class DialogueManager : MonoBehaviour {
         }
       }
     } else if (childrenLength == 1) {
-      prompts = "1. (Continue.)";
+      if (tree.children[0].prompt == "") {
+        prompts = "1. (Continue.)";
+      } else {
+        prompts = "1." + tree.children[0].prompt;
+      }
     } else {
       prompts = "1. (End.)";
     }
@@ -67,5 +78,22 @@ public class DialogueManager : MonoBehaviour {
 
   private void EndDialogue() {
     animator.SetBool("IsOpen", false);
+    isDialogueOpen = false;
+    PlayerMovement.mouseChange();
+  }
+
+  public bool IsDialogueOpen() {
+    return isDialogueOpen;
+  }
+
+  public static void TriggerDialogue(GameObject npc) {
+    npc.BroadcastMessage("TriggerDialogue");
+  }
+
+  public void ShowDialogueHint() {
+    dialogueHint.text = "Click to start dialogue.";
+  }
+  public void HideDialogueHint() {
+    dialogueHint.text = "";
   }
 }
