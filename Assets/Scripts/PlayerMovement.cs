@@ -1,0 +1,107 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+public class PlayerMovement : MonoBehaviour
+{
+    [SerializeField]
+    public float wSpeed = 2f;
+    public float rSpeed = 5f;
+    public float jSpeed = 5f;
+    public float gravity = 20f;
+    public Camera playerCam;
+    public float sensitivity = 2.0f;
+    public float vertLookLimit = 45.0f;
+
+    CharacterController cc;
+    Vector3 moveDir = Vector3.zero;
+    float rX = 0;
+
+    private bool mouseUnlocked;
+
+    [HideInInspector]
+    public bool canMove = true;
+
+    void Start()
+    {
+        cc = GetComponent<CharacterController>();
+
+        // Lock cursor
+        mouseUnlocked = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+            mouseChange();
+        }
+
+        if (!mouseUnlocked)
+        {
+            Vector3 forward = transform.TransformDirection(Vector3.forward);
+            Vector3 right = transform.TransformDirection(Vector3.right);
+
+            bool isRunning = Input.GetKey(KeyCode.LeftShift);
+            float curX = canMove ? (isRunning ? rSpeed : wSpeed) * Input.GetAxis("Vertical") : 0;
+            float curY = canMove ? (isRunning ? rSpeed : wSpeed) * Input.GetAxis("Horizontal") : 0;
+            float movementDirectionY = moveDir.y;
+            moveDir = (forward * curX) + (right * curY);
+
+            if (Input.GetButtonDown("Jump") && canMove && cc.isGrounded)
+            {
+                moveDir.y = jSpeed;
+            }
+            else
+            {
+                moveDir.y = movementDirectionY;
+            }
+
+            if (!cc.isGrounded)
+            {
+                moveDir.y -= gravity * Time.deltaTime;
+            }
+
+            cc.Move(moveDir * Time.deltaTime);
+
+            if (canMove)
+            {
+                rX += -Input.GetAxis("Mouse Y") * sensitivity;
+                rX = Mathf.Clamp(rX, -vertLookLimit, vertLookLimit);
+                playerCam.transform.localRotation = Quaternion.Euler(rX, 0, 0);
+                transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * sensitivity, 0);
+            }
+        }
+        else
+        {
+            moveDir = Vector3.zero;
+            float movementDirectionY = moveDir.y;
+
+
+            if (!cc.isGrounded)
+            {
+                moveDir.y -= gravity * Time.deltaTime;
+            }
+
+            cc.Move(moveDir * Time.deltaTime);
+        }
+    }
+
+    public void mouseChange()
+    {
+        mouseUnlocked = !mouseUnlocked;
+        Cursor.visible = !Cursor.visible;
+
+        if (mouseUnlocked)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+    }
+}
