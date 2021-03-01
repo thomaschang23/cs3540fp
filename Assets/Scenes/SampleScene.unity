@@ -20950,7 +20950,7 @@ MonoBehaviour:
   playerCam: {fileID: 963194227}
   sensitivity: 2
   vertLookLimit: 45
-  dialogueTriggerDistance: 50
+  dialogueTriggerDistance: 0.5
   canMove: 1
 --- !u!143 &785645141
 CharacterController:
@@ -27079,8 +27079,8 @@ MonoBehaviour:
         - prompt: 
           sentence: I hear the lakes up there are beautiful.
           children:
-          - prompt: (He appears to be lost in thought.)
-            sentence: 
+          - prompt: 
+            sentence: (He appears to be lost in thought.)
             children: []
 --- !u!136 &1862225357
 CapsuleCollider:
