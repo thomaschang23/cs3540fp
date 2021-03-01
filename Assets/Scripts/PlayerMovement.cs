@@ -122,6 +122,7 @@ public class PlayerMovement : MonoBehaviour
       npc = hit.collider.gameObject;
       FindObjectOfType<DialogueManager>().ShowDialogueHint();
     } else {
+      npc = null;
       FindObjectOfType<DialogueManager>().HideDialogueHint();
     }
   }
