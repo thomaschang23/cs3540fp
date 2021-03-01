@@ -58,7 +58,7 @@ public class DialogueManager : MonoBehaviour {
       if (tree.children[0].prompt == "") {
         prompts = "1. (Continue.)";
       } else {
-        prompts = "1." + tree.children[0].prompt;
+        prompts = "1. " + tree.children[0].prompt;
       }
     } else {
       prompts = "1. (End.)";
