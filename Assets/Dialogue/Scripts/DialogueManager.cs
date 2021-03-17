@@ -73,8 +73,13 @@ public class DialogueManager : MonoBehaviour {
         prompts = "1. (End.)";
       }
 
+      if (node.prompts.Length == 3) {
+        button3.gameObject.SetActive(true);
+      }
+
       if (node.prompts.Length < 3) {
         button3.gameObject.SetActive(false);
+        button2.gameObject.SetActive(true);
       }
 
       if (node.prompts.Length < 2) {
@@ -86,6 +91,8 @@ public class DialogueManager : MonoBehaviour {
 
       StopAllCoroutines();
       StartCoroutine(TypeSentence(dialogueView, node.text));
+
+      FlagManager.SetFlag(node.flagId);
     } else {
       EndDialogue();
     }
