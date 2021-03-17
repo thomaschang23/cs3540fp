@@ -1,21 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using RotaryHeart.Lib.SerializableDictionary;
 
 [System.Serializable]
-public class Dialogue {
-  public string name;
-
-  public Tree tree;
+public class Dialogue : SerializableDictionaryBase<int, DialogueNode> {
 }
 
 [System.Serializable]
-public class Tree  {
-  [TextArea(3, 10)]
-  public string prompt;
+public class DialogueNode  {
+  public string name;
 
   [TextArea(3, 10)]
-  public string sentence;
+  public string text;
 
-  public Tree[] children;
+  public DialoguePrompt[] prompts;
+}
+
+[System.Serializable]
+public class DialoguePrompt {
+  public string text;
+  public int nextNodeId;
 }

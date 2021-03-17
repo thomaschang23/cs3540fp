@@ -11,7 +11,12 @@ public class DialogueManager : MonoBehaviour {
   public Text promptView;
   public Animator animator;
 
-  private Tree tree;
+  public Button button1;
+  public Button button2;
+  public Button button3;
+
+  private Dialogue tree;
+  private int currentNodeIdx;
   private bool isDialogueOpen;
 
   public void StartDialogue(Dialogue dialogue) {
@@ -21,53 +26,71 @@ public class DialogueManager : MonoBehaviour {
       isDialogueOpen = true;
       animator.SetBool("IsOpen", true);
 
-      nameView.text = dialogue.name;
-      tree = dialogue.tree;
+      tree = dialogue;
+      currentNodeIdx = 0;
 
       DisplayCurrentSentence();
     }
   }
 
-  public void DisplayNextSentence(int prompt) {
-    int childrenLength = tree.children.Length;
+  public void DisplayNextSentence(int promptIdx) {
+    if (tree.TryGetValue(currentNodeIdx, out DialogueNode node)) {
+      int childrenLength = node.prompts.Length;
 
-    if (childrenLength == 0) {
-      EndDialogue();
-      return;
-    } else if (childrenLength > prompt) {
-      tree = tree.children[prompt];
+      if (childrenLength == 0) {
+        EndDialogue();
+        return;
+      } else if (childrenLength > promptIdx) {
+        currentNodeIdx = node.prompts[promptIdx].nextNodeId;
+      } else {
+        currentNodeIdx = node.prompts[childrenLength - 1].nextNodeId;
+      }
+      DisplayCurrentSentence();
     } else {
-      tree = tree.children[childrenLength - 1];
+      EndDialogue();
     }
-
-    DisplayCurrentSentence();
   }
 
   private void DisplayCurrentSentence() {
-    string prompts = "";
-    int childrenLength = tree.children.Length;
+    if (tree.TryGetValue(currentNodeIdx, out DialogueNode node)) {
+      string prompts = "";
+      int childrenLength = node.prompts.Length;
 
-    if (childrenLength > 1) {
-      for (int i = 0; i < childrenLength; i++) {
-        prompts += (i + 1).ToString() + ". " + tree.children[i].prompt;
-        if (i < childrenLength - 1) {
-          prompts += "\n";
+      if (childrenLength > 1) {
+        for (int i = 0; i < childrenLength; i++) {
+          prompts += (i + 1).ToString() + ". " + node.prompts[i].text;
+          if (i < childrenLength - 1) {
+            prompts += "\n";
+          }
         }
-      }
-    } else if (childrenLength == 1) {
-      if (tree.children[0].prompt == "") {
-        prompts = "1. (Continue.)";
+      } else if (childrenLength == 1) {
+        if (node.prompts[0].text == "") {
+          prompts = "1. (Continue.)";
+        } else {
+          prompts = "1. " + node.prompts[0].text;
+        }
       } else {
-        prompts = "1. " + tree.children[0].prompt;
+        prompts = "1. (End.)";
       }
-    } else {
-      prompts = "1. (End.)";
-    }
 
-    StopAllCoroutines();
-    StartCoroutine(TypeSentence(dialogueView, tree.sentence));
-    StartCoroutine(TypeSentence(promptView, prompts));
+      if (node.prompts.Length < 3) {
+        button3.gameObject.SetActive(false);
+      }
+
+      if (node.prompts.Length < 2) {
+        button2.gameObject.SetActive(false);
+      }
+
+      nameView.text = node.name;
+      promptView.text = prompts;
+
+      StopAllCoroutines();
+      StartCoroutine(TypeSentence(dialogueView, node.text));
+    } else {
+      EndDialogue();
+    }
   }
+
   IEnumerator TypeSentence(Text view, string sentence) {
     view.text = "";
     foreach (char letter in sentence.ToCharArray()) {

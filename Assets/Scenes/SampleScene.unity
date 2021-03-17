@@ -7827,6 +7827,9 @@ MonoBehaviour:
   dialogueView: {fileID: 2274470676859414285}
   promptView: {fileID: 999807629}
   animator: {fileID: 9081839341653394572}
+  button1: {fileID: 105266948}
+  button2: {fileID: 2137456195}
+  button3: {fileID: 1345771793}
 --- !u!43 &717912221
 Mesh:
   m_ObjectHideFlags: 0
@@ -27046,58 +27049,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Rosannah Wilson
-    tree:
-      prompt: 
-      sentence: ...
-      children:
-      - prompt: O-Oh, hello!
-        sentence: Hey Les, sorry to bother you.
-        children:
-        - prompt: Oh, don't worry about it. I... I just wasn't expecting any visitors,
-            that's all.
-          sentence: Yeah, yeah...
-          children:
-          - prompt: ' ...'
-            sentence: ...
-            children:
-            - prompt: Well, h-how have you been holding up?
-              sentence: Taking it one day at a time, ya know. I'm sure you aren't
-                that far off.
-              children:
-              - prompt: Yeah, totally...
-                sentence: ....
-                children:
-                - prompt: ' ...'
-                  sentence: Somehow the one damn time I go out of town in years,
-                    Avery gets his damn self killed. You can't make this up, Les.
-                    Haha.
-                  children:
-                  - prompt: Look Ro, we're gonna find that bastard, with or without
-                      that good-for-nothing police station, ya hear? D-Don't you
-                      forget that.
-                    sentence: Don't make promises you can't keep.
-                    children:
-                    - prompt: I'm not.
-                      sentence: I can definitely see why Avery married you... (She
-                        chuckles under her breath and wipes her eyes.) Well, if you're
-                        actually gonna try and get that son of a bitch, Bernie, I
-                        would be careful. ... Didn't you hear about what he did the
-                        other week? No? Well, I would tell you about it but I gotta
-                        run. Ask some of the people around town and they'll give
-                        you the long and short of it. I'll see you around, though.
-                        Don't be a stranger.
-                      children: []
-                  - prompt: It's just so terrible.
-                    sentence: And there's that Bernie not giving a single shit about
-                      what happened.
-                    children:
-                    - prompt: Hmm?
-                      sentence: You don't know about Bernie? ... Well, I would tell
-                        you about it but I gotta run. Ask some of the people around
-                        town and they'll give you the long and short of it. I'll
-                        see you around, though. Don't be a stranger.
-                      children: []
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 1
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 1
+    _keyValues: 0000000002000000
+    _keys: 0000000002000000
+    _values:
+    - name: biff
+      text: hi
+      prompts:
+      - text: sup
+        nextNodeId: 2
+      - text: bye
+        nextNodeId: 1
+    - name: biff
+      text: it's tough out there
+      prompts: []
 --- !u!136 &1862225357
 CapsuleCollider:
   m_ObjectHideFlags: 0
