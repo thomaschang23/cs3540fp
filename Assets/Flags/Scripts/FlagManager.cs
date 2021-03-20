@@ -5,7 +5,7 @@ using RotaryHeart.Lib.SerializableDictionary;
 
 public static class FlagManager : object {
   public static Flags flags;
-  private static List<string> setFlags;
+  private static List<string> setFlags = new List<string>();
 
   public static void SetFlag(string flagId) {
     setFlags.Add(flagId);
