@@ -36,6 +36,7 @@ public class DialogueManager : MonoBehaviour
             tree = dialogue;
             currentNodeIdx = 0;
 
+
             DisplayCurrentSentence();
         }
     }
@@ -119,14 +120,11 @@ public class DialogueManager : MonoBehaviour
 
             if (updatedLength == 3)
             {
-                promptView3.text = prompts[2];
-                promptView2.text = prompts[1];
                 button3.gameObject.SetActive(true);
             }
 
             if (updatedLength < 3)
             {
-                promptView2.text = prompts[1];
                 button3.gameObject.SetActive(false);
                 button2.gameObject.SetActive(true);
             }
@@ -144,7 +142,13 @@ public class DialogueManager : MonoBehaviour
             {
                 nameView.text = currentDefaultName;
             }
-            promptView1.text = prompts[0];
+
+            Text[] promptViews = { promptView1, promptView2, promptView3 };
+
+            for (int i = 0; i < prompts.Count; ++i)
+            {
+                promptViews[i].text = prompts[i];
+            } 
 
             StopAllCoroutines();
             StartCoroutine(TypeSentence(dialogueView, node.text));
