@@ -39615,26 +39615,38 @@ MonoBehaviour:
       elementIcon: {fileID: 0}
     reqReferences: {fileID: 0}
     isExpanded: 1
-    _keyValues: 0000000002000000
-    _keys: 0000000002000000
+    _keyValues: 000000000200000003000000
+    _keys: 000000000200000003000000
     _values:
     - name: Rosannah Wilson
       flagId: FIRST
       text: hi
       prompts:
       - text: sup
+        dependant: 
         nextNodeId: 2
       - text: bye
+        dependant: 
         nextNodeId: 1
     - name: Rosannah Wilson
       flagId: SECOND
       text: it's tough out there
       prompts:
       - text: yup
-        nextNodeId: 1
+        dependant: 
+        nextNodeId: 3
       - text: i feel
+        dependant: THIRD
         nextNodeId: 1
       - text: pain
+        dependant: 
+        nextNodeId: 1
+    - name: Rosannah Wilson
+      flagId: THIRD
+      text: sdasdasda
+      prompts:
+      - text: asdds
+        dependant: 
         nextNodeId: 1
 --- !u!136 &1862225357
 CapsuleCollider:
