@@ -11,4 +11,10 @@ public class DialogueTrigger : MonoBehaviour
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue, defaultName);
     }
+
+
+    public static void endGame()
+    {
+        Debug.Log("GAME OVER");
+    }
 }

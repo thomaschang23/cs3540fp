@@ -42,8 +42,17 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence(int promptIdx)
     {
+        // *** IMPORTANT ***
+        // There may be issues here when a prompt is hidden in DisplayCurrentSentance
+        // Like, off by one or something, idk, I haven't run into it yet
+
         if (tree.TryGetValue(currentNodeIdx, out DialogueNode node))
         {
+            if (node.prompts[promptIdx].e != null)
+            {
+                node.prompts[promptIdx].e.Invoke();
+            }
+
             int childrenLength = node.prompts.Length;
 
             if (childrenLength == 0)

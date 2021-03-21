@@ -31,6 +31,7 @@ public static class FlagManager : object
         }
         return texts;
     }
+
 }
 
 [System.Serializable]
@@ -44,3 +45,5 @@ public class FlagNode
     [TextArea(3, 10)]
     public string text;
 }
+
+
