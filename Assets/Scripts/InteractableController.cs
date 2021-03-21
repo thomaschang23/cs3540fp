@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class InteractableController : MonoBehaviour
 {
-    KeyCode interactKey = KeyCode.E;
+    public float interactableDistance = 3f;
+
+    private KeyCode interactKey = KeyCode.E;
     private int counter = 0;
 
     // Start is called before the first frame update
@@ -18,7 +20,7 @@ public class InteractableController : MonoBehaviour
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 2))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, interactableDistance))
         {
             if (hit.collider.CompareTag("Door"))
             {
