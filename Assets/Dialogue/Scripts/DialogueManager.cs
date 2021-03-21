@@ -140,7 +140,8 @@ public class DialogueManager : MonoBehaviour
             StopAllCoroutines();
             StartCoroutine(TypeSentence(dialogueView, node.text));
 
-            FlagManager.SetFlag(node.flagId);
+            if (!node.flagId.Equals(""))
+                FlagManager.SetFlag(node.flagId);
         }
         else
         {

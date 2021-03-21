@@ -13,7 +13,7 @@ public class DialogueNode
 {
     public string name;
 
-    public string flagId;
+    public string flagId = "";
 
     [TextArea(3, 10)]
     public string text;

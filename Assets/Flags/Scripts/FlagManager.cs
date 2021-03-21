@@ -10,7 +10,8 @@ public static class FlagManager : object
 
     public static void SetFlag(string flagId)
     {
-        setFlags.Add(flagId);
+        if (!CheckFlag(flagId))
+            setFlags.Add(flagId);
     }
 
     public static bool CheckFlag(string flagID)
