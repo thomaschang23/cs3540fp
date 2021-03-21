@@ -87,7 +87,7 @@ public class DialogueManager : MonoBehaviour
 
             if (updatedLength > 1)
             {
-                for (int i = 0; i < childrenLength; i++)
+                for (int i = 0; i < updatedLength; i++)
                 {
                     prompts.Add((i + 1).ToString() + ". " + availablePrompts[i].text);
                 }
