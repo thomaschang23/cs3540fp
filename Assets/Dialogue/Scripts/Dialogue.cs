@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using RotaryHeart.Lib.SerializableDictionary;
+using UnityEngine.Events;
 
 [System.Serializable]
 public class Dialogue : SerializableDictionaryBase<int, DialogueNode>
@@ -26,5 +27,6 @@ public class DialoguePrompt
 {
     public string text;
     public string dependant = "";
+    public UnityEvent e;
     public int nextNodeId;
 }
