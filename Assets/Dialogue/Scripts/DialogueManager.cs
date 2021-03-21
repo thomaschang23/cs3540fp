@@ -23,6 +23,8 @@ public class DialogueManager : MonoBehaviour
     private bool isDialogueOpen;
     private string currentDefaultName;
 
+    DialoguePrompt[] availablePrompts;
+
     public void StartDialogue(Dialogue dialogue, string defaultName)
     {
         if (!isDialogueOpen)
@@ -43,18 +45,15 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence(int promptIdx)
     {
-        // *** IMPORTANT ***
-        // There may be issues here when a prompt is hidden in DisplayCurrentSentance
-        // Like, off by one or something, idk, I haven't run into it yet
-
         if (tree.TryGetValue(currentNodeIdx, out DialogueNode node))
         {
-            if (node.prompts[promptIdx].e != null)
+
+            if (availablePrompts[promptIdx].e != null)
             {
-                node.prompts[promptIdx].e.Invoke();
+                availablePrompts[promptIdx].e.Invoke();
             }
 
-            int childrenLength = node.prompts.Length;
+            int childrenLength = availablePrompts.Length;
 
             if (childrenLength == 0)
             {
@@ -63,11 +62,11 @@ public class DialogueManager : MonoBehaviour
             }
             else if (childrenLength > promptIdx)
             {
-                currentNodeIdx = node.prompts[promptIdx].nextNodeId;
+                currentNodeIdx = availablePrompts[promptIdx].nextNodeId;
             }
             else
             {
-                currentNodeIdx = node.prompts[childrenLength - 1].nextNodeId;
+                currentNodeIdx = availablePrompts[childrenLength - 1].nextNodeId;
             }
             DisplayCurrentSentence();
         }
@@ -83,7 +82,7 @@ public class DialogueManager : MonoBehaviour
         {
             List<string> prompts = new List<string>();
             int childrenLength = node.prompts.Length;
-            DialoguePrompt[] availablePrompts = new DialoguePrompt[childrenLength];
+            availablePrompts = new DialoguePrompt[childrenLength];
             int updatedLength = 0;
 
             for (int i = 0; i < childrenLength; i++)
