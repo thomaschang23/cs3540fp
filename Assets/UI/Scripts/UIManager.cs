@@ -46,11 +46,11 @@ public class UIManager : MonoBehaviour
     {
         if (areNotesOpen || isDialogueOpen)
         {
-            PlayerMovement.mouseChange(1);
+            PlayerMovement.mouseChange(-1);
         }
         else
         {
-            PlayerMovement.mouseChange(-1);
+            PlayerMovement.mouseChange(1);
         }
     }
 }
