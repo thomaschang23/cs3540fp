@@ -29,7 +29,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (!isDialogueOpen)
         {
-            PlayerMovement.mouseChange();
+            PlayerMovement.mouseChange(-1);
 
             isDialogueOpen = true;
             animator.SetBool("IsOpen", true);
@@ -175,7 +175,7 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", false);
         isDialogueOpen = false;
-        PlayerMovement.mouseChange();
+        PlayerMovement.mouseChange(1);
     }
 
     public bool IsDialogueOpen()

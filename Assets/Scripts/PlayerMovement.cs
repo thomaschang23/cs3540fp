@@ -97,33 +97,52 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public static void mouseChange()
+    public static void mouseChange(int newState = 0)
     {
-        mouseUnlocked = !mouseUnlocked;
-        Cursor.visible = !Cursor.visible;
-
-        if (mouseUnlocked)
+        if (newState == 0)
         {
+            mouseUnlocked = !mouseUnlocked;
+            Cursor.visible = !Cursor.visible;
+
+            if (mouseUnlocked)
+            {
+                Cursor.lockState = CursorLockMode.None;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+        }
+        else if (newState == -1)
+        {
+            mouseUnlocked = true;
+            Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+        }
+        else if (newState == 1)
+        {
+            mouseUnlocked = false;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }  
+    }
+
+    public void FixedUpdate()
+    {
+        RaycastHit hit;
+        Ray ray = playerCam.ScreenPointToRay(Input.mousePosition);
+        if (
+          Physics.Raycast(ray, out hit, dialogueTriggerDistance)
+          && hit.collider.CompareTag("DialogueNPC")
+        )
+        {
+            npc = hit.collider.gameObject;
+            FindObjectOfType<DialogueManager>().ShowDialogueHint();
         }
         else
         {
-            Cursor.lockState = CursorLockMode.Locked;
+            npc = null;
+            FindObjectOfType<DialogueManager>().HideDialogueHint();
         }
     }
-
-  public void FixedUpdate() {
-    RaycastHit hit;
-    Ray ray = playerCam.ScreenPointToRay(Input.mousePosition);
-    if (
-      Physics.Raycast(ray, out hit, dialogueTriggerDistance)
-      && hit.collider.CompareTag("DialogueNPC")
-    ) {
-      npc = hit.collider.gameObject;
-      FindObjectOfType<DialogueManager>().ShowDialogueHint();
-    } else {
-      npc = null;
-      FindObjectOfType<DialogueManager>().HideDialogueHint();
-    }
-  }
 }
