@@ -12,35 +12,32 @@ public class DialogueManager : MonoBehaviour
     public Text promptView1;
     public Text promptView2;
     public Text promptView3;
-    public Animator animator;
 
     public Button button1;
     public Button button2;
     public Button button3;
 
+    private UIManager uiManager;
     private Dialogue tree;
     private int currentNodeIdx;
-    private bool isDialogueOpen;
     private string currentDefaultName;
 
     DialoguePrompt[] availablePrompts;
 
+    private void Start()
+    {
+        uiManager = GetComponent<UIManager>();
+    }
+
     public void StartDialogue(Dialogue dialogue, string defaultName)
     {
-        if (!isDialogueOpen)
-        {
-            PlayerMovement.mouseChange(-1);
+        uiManager.ToggleDialogue();
 
-            isDialogueOpen = true;
-            animator.SetBool("IsOpen", true);
+        currentDefaultName = defaultName;
+        tree = dialogue;
+        currentNodeIdx = 0;
 
-            currentDefaultName = defaultName;
-            tree = dialogue;
-            currentNodeIdx = 0;
-
-
-            DisplayCurrentSentence();
-        }
+        DisplayCurrentSentence();
     }
 
     public void DisplayNextSentence(int promptIdx)
@@ -57,7 +54,7 @@ public class DialogueManager : MonoBehaviour
 
             if (childrenLength == 0)
             {
-                EndDialogue();
+                uiManager.ToggleDialogue();
                 return;
             }
             else if (childrenLength > promptIdx)
@@ -72,7 +69,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            EndDialogue();
+            uiManager.ToggleDialogue();
         }
     }
 
@@ -157,7 +154,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            EndDialogue();
+            uiManager.ToggleDialogue();
         }
     }
 
@@ -169,18 +166,6 @@ public class DialogueManager : MonoBehaviour
             view.text += letter;
             yield return new WaitForSeconds(letterWriteSpeed);
         }
-    }
-
-    private void EndDialogue()
-    {
-        animator.SetBool("IsOpen", false);
-        isDialogueOpen = false;
-        PlayerMovement.mouseChange(1);
-    }
-
-    public bool IsDialogueOpen()
-    {
-        return isDialogueOpen;
     }
 
     public static void TriggerDialogue(GameObject npc)

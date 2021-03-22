@@ -6,37 +6,33 @@ using UnityEngine.UI;
 public class NoteManager : MonoBehaviour
 {
     public Text pageView;
-    public Animator animator;
 
-    private bool areNotesOpen = false;
     private int currentPage;
     private List<List<string>> pages;
+    private UIManager uiManager;
+
+    private void Start()
+    {
+        uiManager = GetComponent<UIManager>();
+    }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.J))
         {
-            ToggleNotes();
+            bool areNotesOpen = uiManager.ToggleNotes();
+            if (areNotesOpen)
+            {
+                ShowNotes();
+            }
         }
     }
 
-    private void ToggleNotes()
+    public void ShowNotes()
     {
-        if (areNotesOpen)
-        {
-            PlayerMovement.mouseChange(1);
-            areNotesOpen = false;
-            animator.SetBool("IsOpen", false);
-        }
-        else
-        {
-            PlayerMovement.mouseChange(-1);
-            areNotesOpen = true;
-            animator.SetBool("IsOpen", true);
-            currentPage = 0;
-            pages = Paginate(FlagManager.GetFlagTexts());
-            DisplayCurrentPage();
-        }
+        currentPage = 0;
+        pages = Paginate(FlagManager.GetFlagTexts());
+        DisplayCurrentPage();
     }
 
     private List<List<string>> Paginate(List<string> texts)

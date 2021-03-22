@@ -24,10 +24,7 @@ public static class FlagManager : object
         List<string> texts = new List<string>();
         foreach (string flagId in setFlags)
         {
-            if (flags.TryGetValue(flagId, out FlagNode node))
-            {
-                texts.Add(node.text);
-            }
+            texts.Add(flagId);
         }
         return texts;
     }
