@@ -64,7 +64,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 Assets/Plugins/
-ProjectSettings/
+ProjectSettings/Packages/
 # Packed Addressables
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
