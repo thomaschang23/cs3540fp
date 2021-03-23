@@ -398,6 +398,7 @@ MonoBehaviour:
     _values:
     - name: 
       flagId: FIRST
+      flagNote: Said hello to Rosannah.
       text: hi
       prompts:
       - text: sup
@@ -414,6 +415,7 @@ MonoBehaviour:
         nextNodeId: 1
     - name: 
       flagId: SECOND
+      flagNote: 
       text: it's tough out there
       prompts:
       - text: yup
@@ -436,6 +438,7 @@ MonoBehaviour:
         nextNodeId: 1
     - name: Rosannah Wilson
       flagId: 
+      flagNote: 
       text: hi
       prompts:
       - text: sup
@@ -29516,6 +29519,7 @@ MonoBehaviour:
     _values:
     - name: Police Officer
       flagId: 
+      flagNote: 
       text: Do you have something to report?
       prompts:
       - text: Yes, it was Rosannah
@@ -29532,6 +29536,7 @@ MonoBehaviour:
         nextNodeId: 1
     - name: Police Officer
       flagId: 
+      flagNote: 
       text: Are you absolutely sure?
       prompts:
       - text: Yes, 100%
@@ -43721,6 +43726,7 @@ MonoBehaviour:
     _values:
     - name: 
       flagId: FIRST
+      flagNote: 
       text: hi
       prompts:
       - text: sup
@@ -43737,6 +43743,7 @@ MonoBehaviour:
         nextNodeId: 1
     - name: 
       flagId: SECOND
+      flagNote: 
       text: it's tough out there
       prompts:
       - text: yup
@@ -43759,6 +43766,7 @@ MonoBehaviour:
         nextNodeId: 1
     - name: Rosannah Wilson
       flagId: THIRD
+      flagNote: 
       text: hi
       prompts:
       - text: sup
