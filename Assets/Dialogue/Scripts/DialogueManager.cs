@@ -150,7 +150,7 @@ public class DialogueManager : MonoBehaviour
             StartCoroutine(TypeSentence(dialogueView, node.text));
 
             if (!node.flagId.Equals(""))
-                FlagManager.SetFlag(node.flagId);
+                FlagManager.SetFlag(node.flagId, node.flagNote);
         }
         else
         {

@@ -13,12 +13,10 @@ public class Dialogue : SerializableDictionaryBase<int, DialogueNode>
 public class DialogueNode
 {
     public string name;
-
     public string flagId = "";
-
+    public string flagNote = "";
     [TextArea(3, 10)]
     public string text;
-
     public DialoguePrompt[] prompts;
 }
 
