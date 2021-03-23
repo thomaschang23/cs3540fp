@@ -117,17 +117,22 @@ public class DialogueManager : MonoBehaviour
             if (updatedLength == 3)
             {
                 button3.gameObject.SetActive(true);
+                button2.gameObject.SetActive(true);
+                button1.gameObject.SetActive(true);
             }
 
             if (updatedLength < 3)
             {
                 button3.gameObject.SetActive(false);
                 button2.gameObject.SetActive(true);
+                button1.gameObject.SetActive(true);
             }
 
             if (updatedLength < 2)
             {
+                button3.gameObject.SetActive(false);
                 button2.gameObject.SetActive(false);
+                button1.gameObject.SetActive(true);
             }
 
             if (node.name != "")
