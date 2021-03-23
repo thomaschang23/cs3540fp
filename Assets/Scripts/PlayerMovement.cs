@@ -15,6 +15,9 @@ public class PlayerMovement : MonoBehaviour
     public float vertLookLimit = 45.0f;
     public float dialogueTriggerDistance = 10.0f;
 
+    AudioSource audioSource;
+
+
     CharacterController cc;
     Vector3 moveDir = Vector3.zero;
     float rX = 0;
@@ -29,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         cc = GetComponent<CharacterController>();
+        audioSource = GetComponent<AudioSource>();
 
         // Lock cursor
         mouseUnlocked = false;
@@ -95,6 +99,24 @@ public class PlayerMovement : MonoBehaviour
 
             cc.Move(moveDir * Time.deltaTime);
         }
+
+        if (cc.velocity.magnitude > 1f)
+        {
+            if (!audioSource.isPlaying)
+			{
+                audioSource.volume = Random.Range(0.8f, 1f);
+                audioSource.pitch = Random.Range(0.8f, 1.1f);
+                audioSource.Play();
+            }
+        }
+        else
+		{
+            if (audioSource.isPlaying)
+			{
+                Debug.Log("Stop");
+                audioSource.Stop();
+			}
+		}
     }
 
     public static void mouseChange(int newState = 0)
