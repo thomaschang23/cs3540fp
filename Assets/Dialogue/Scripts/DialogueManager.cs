@@ -17,6 +17,9 @@ public class DialogueManager : MonoBehaviour
     public Button button2;
     public Button button3;
 
+    public AudioClip textScroll;
+    public GameObject player;
+
     private UIManager uiManager;
     private Dialogue tree;
     private int currentNodeIdx;
@@ -171,6 +174,8 @@ public class DialogueManager : MonoBehaviour
             view.text += letter;
             yield return new WaitForSeconds(letterWriteSpeed);
         }
+
+        AudioSource.PlayClipAtPoint(textScroll, player.transform.position, 0.1f); // TODO: make a class of global variables and use static global variable player
     }
 
     public static void TriggerDialogue(GameObject npc)
