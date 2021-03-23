@@ -7,7 +7,6 @@ public class InteractableController : MonoBehaviour
     public float interactableDistance = 3f;
 
     private KeyCode interactKey = KeyCode.E;
-    private int counter = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +26,6 @@ public class InteractableController : MonoBehaviour
                 if (Input.GetKeyDown(interactKey))
                 {
                     GameObject door = hit.collider.gameObject;
-                    Debug.Log(counter++);
                     door.GetComponent<DoorController>().toggleDoor();
                 }
             }
