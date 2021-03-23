@@ -14,11 +14,21 @@ public class GameOver : MonoBehaviour
 
     float t = 0;
 
-    public void endGame()
+    public void endGameSuccess()
     {
         gameOver = true;
         continued = GetComponentInChildren<Text>();
-        
+        Debug.Log("You won");
+        continued.text = "Your accusation was correct! You win :)";
+
+    }
+
+    public void endGameFailure()
+    {
+        gameOver = true;
+        continued = GetComponentInChildren<Text>();
+        Debug.Log("You lose");
+        continued.text = "Your accusation was not correct. You lose :(";
 
     }
 
