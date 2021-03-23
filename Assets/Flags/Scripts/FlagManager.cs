@@ -5,42 +5,34 @@ using RotaryHeart.Lib.SerializableDictionary;
 
 public static class FlagManager : object
 {
-    public static Flags flags;
-    private static List<string> setFlags = new List<string>();
+    private static List<(string, string)> setFlags = new List<(string, string)>();
 
-    public static void SetFlag(string flagId)
+    public static void SetFlag(string flagId, string flagNote)
     {
         if (!CheckFlag(flagId))
-            setFlags.Add(flagId);
+        {
+            setFlags.Add((flagId, flagNote));
+        }
     }
 
-    public static bool CheckFlag(string flagID)
+    public static bool CheckFlag(string flagId)
     {
-        return setFlags.Contains(flagID);
+        bool ret = false;
+        foreach ((string, string) flag in setFlags)
+        {
+            ret = ret || (flag.Item1 == flagId);
+        }
+        return ret;
     }
 
     public static List<string> GetFlagTexts()
     {
         List<string> texts = new List<string>();
-        foreach (string flagId in setFlags)
+        foreach ((string, string) flag in setFlags)
         {
-            texts.Add(flagId);
+            texts.Add(flag.Item2);
         }
         return texts;
     }
 
 }
-
-[System.Serializable]
-public class Flags : SerializableDictionaryBase<string, FlagNode>
-{
-}
-
-[System.Serializable]
-public class FlagNode
-{
-    [TextArea(3, 10)]
-    public string text;
-}
-
-

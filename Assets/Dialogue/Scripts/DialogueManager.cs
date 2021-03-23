@@ -117,17 +117,22 @@ public class DialogueManager : MonoBehaviour
             if (updatedLength == 3)
             {
                 button3.gameObject.SetActive(true);
+                button2.gameObject.SetActive(true);
+                button1.gameObject.SetActive(true);
             }
 
             if (updatedLength < 3)
             {
                 button3.gameObject.SetActive(false);
                 button2.gameObject.SetActive(true);
+                button1.gameObject.SetActive(true);
             }
 
             if (updatedLength < 2)
             {
+                button3.gameObject.SetActive(false);
                 button2.gameObject.SetActive(false);
+                button1.gameObject.SetActive(true);
             }
 
             if (node.name != "")
@@ -150,7 +155,7 @@ public class DialogueManager : MonoBehaviour
             StartCoroutine(TypeSentence(dialogueView, node.text));
 
             if (!node.flagId.Equals(""))
-                FlagManager.SetFlag(node.flagId);
+                FlagManager.SetFlag(node.flagId, node.flagNote);
         }
         else
         {
