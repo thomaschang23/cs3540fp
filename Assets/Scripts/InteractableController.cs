@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InteractableController : MonoBehaviour
 {
+    public AudioClip doorSFX;
     public float interactableDistance = 3f;
 
     private KeyCode interactKey = KeyCode.E;
@@ -27,6 +28,8 @@ public class InteractableController : MonoBehaviour
                 {
                     GameObject door = hit.collider.gameObject;
                     door.GetComponent<DoorController>().toggleDoor();
+
+                    AudioSource.PlayClipAtPoint(doorSFX, door.transform.position);
                 }
             }
         }

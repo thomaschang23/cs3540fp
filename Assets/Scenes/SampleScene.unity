@@ -28089,7 +28089,6 @@ GameObject:
   - component: {fileID: 785645139}
   - component: {fileID: 785645140}
   - component: {fileID: 785645141}
-  - component: {fileID: 785645143}
   - component: {fileID: 785645142}
   m_Layer: 0
   m_Name: Player
@@ -28327,18 +28326,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &785645143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 785645134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6da0bd4ca41dc6e42be1fa444c03958d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &788906152
 GameObject:
   m_ObjectHideFlags: 0
@@ -30630,6 +30617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e5488b3def575f42a0b072e6a86de1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorSFX: {fileID: 8300000, guid: 3804c512d7cd4c74291e2a57c43eda49, type: 3}
   interactableDistance: 3
 --- !u!1 &970104641
 GameObject:
