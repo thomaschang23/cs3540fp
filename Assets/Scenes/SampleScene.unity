@@ -393,63 +393,122 @@ MonoBehaviour:
       elementIcon: {fileID: 0}
     reqReferences: {fileID: 0}
     isExpanded: 1
-    _keyValues: 000000000200000003000000
-    _keys: 000000000200000003000000
+    _keyValues: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
+    _keys: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
     _values:
     - name: 
-      flagId: FIRST
-      text: hi
+      flagId: 
+      text: Hey Les, sorry to bother you.
       prompts:
-      - text: sup
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 2
-      - text: bye
+      - text: Oh, don't worry about it. I... I just wasn't expecting any visitors,
+          that's all.
         dependant: 
         e:
           m_PersistentCalls:
             m_Calls: []
         nextNodeId: 1
     - name: 
-      flagId: SECOND
-      text: it's tough out there
+      flagId: 
+      text: Yeah, yeah...
       prompts:
-      - text: yup
+      - text: Well, h-how have you been holding up?
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 2
+    - name: Rosannah Wilson
+      flagId: 
+      text: Taking it one day at a time, ya know. I'm sure you aren't that far off
+      prompts:
+      - text: Yeah, totally...
         dependant: 
         e:
           m_PersistentCalls:
             m_Calls: []
         nextNodeId: 3
-      - text: i feel
-        dependant: THIRD
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 1
-      - text: pain
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 1
     - name: Rosannah Wilson
       flagId: 
-      text: hi
+      text: Somehow the one damn time I go out of town in years, Avery gets damn
+        self killed. You can't make this up, Les, haha.
       prompts:
-      - text: sup
+      - text: Look Ro, we're gonna find that bastard, with or without that good-for-nothing
+          police station, ya hear? D-Don't you forget that.
         dependant: 
         e:
           m_PersistentCalls:
             m_Calls: []
-        nextNodeId: 2
-      - text: bye
+        nextNodeId: 4
+      - text: It's just so terrible.
         dependant: 
         e:
           m_PersistentCalls:
             m_Calls: []
-        nextNodeId: 1
+        nextNodeId: 8
+    - name: Rosannah Wilson
+      flagId: trustRo
+      text: Don't make promises you can't keep.
+      prompts:
+      - text: I'm not.
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 5
+    - name: Rosannah Wilson
+      flagId: 
+      text: I can definitely see why Avery married you... Well, if you're actually
+        gonna try and get that son of a bitch, Bernie, I would be careful.
+      prompts:
+      - text: Bernie?
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 6
+    - name: Rosannah Wilson
+      flagId: 
+      text: It couldn't be more obvious. Didn't you hear about what he did the other
+        week?
+      prompts:
+      - text: N-No, I didn't.
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 7
+    - name: Rosannah Wilson
+      flagId: 
+      text: Well, I would tell you about it but I gotta run. Ask some of the people
+        around town and they'll give you the long and short of it. I'll see you around,
+        though. Don't be a stranger.
+      prompts:
+      - text: Yeah, of course.
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: -1
+    - name: Rosannah Wilson
+      flagId: 
+      text: And there's that Bernie not giving a shit.
+      prompts:
+      - text: Hmm?
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 9
+    - name: Rosannah Wilson
+      flagId: 
+      text: You don't know about Bernie?
+      prompts:
+      - text: No, not really
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 7
 --- !u!136 &13267400
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6567,7 +6626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212690231179c8444bc496e60965d2ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultName: 
+  defaultName: Stacey Addis
   dialogue:
     reorderableList:
       canAdd: 1
@@ -6575,7 +6634,7 @@ MonoBehaviour:
       draggable: 1
       expandable: 1
       multipleSelection: 1
-      isExpanded: 0
+      isExpanded: 1
       label:
         m_Text: Keys
         m_Image: {fileID: 0}
@@ -6590,10 +6649,75 @@ MonoBehaviour:
       elementNameOverride: 
       elementIcon: {fileID: 0}
     reqReferences: {fileID: 0}
-    isExpanded: 0
-    _keyValues: 
-    _keys: 
-    _values: []
+    isExpanded: 1
+    _keyValues: 010000000200000003000000040000000500000000000000
+    _keys: 010000000200000003000000040000000500000000000000
+    _values:
+    - name: 
+      flagId: 
+      text: "Ah, for crying out loud, it wasn\u2019t even that much. Terry had been
+        just seating all of the customers immediately and not pacing out the tickets
+        at all! Ain\u2019t that Hosting 101?"
+      prompts:
+      - text: Okay...
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 2
+    - name: 
+      flagId: 
+      text: "So when he came in to give me my umpteenth ticket in a row, I told her
+        to stop seating those customers so damn fast. Then, I overheard some customers
+        complainin\u2019 about not getting their food, and she had the nerve to blame
+        me!"
+      prompts:
+      - text: "Now you know that ain\u2019t the reason to make a big fuss like you
+          did."
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 3
+    - name: 
+      flagId: 
+      text: "I couldn\u2019t have Terry changing the story like that, ma\u2019am!
+        He likes to lie on me enough as it is\u2026"
+      prompts:
+      - text: ...
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 4
+    - name: 
+      flagId: 
+      text: "... but I do apologize, Ms. Wilson. It won\u2019t happen again. I was
+        just really stressed that night, you know, because of Avery and all."
+      prompts:
+      - text: "I guess so\u2026 Just keep better care of yourself from now on, ya
+          hear?"
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 5
+    - name: 
+      flagId: 
+      text: Okay, okay, I will.
+      prompts: []
+    - name: 
+      flagId: 
+      text: Hello Ms. Wilson. What brings you around here?
+      prompts:
+      - text: "Well I\u2019m doing just fine, thank you for asking. Terry told me
+          about the tiff you two had in front of the customers the other day. Care
+          to explain yourself?"
+        dependant: meetStacey
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 1
 --- !u!64 &476929580
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27620,7 +27744,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785645134}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 110.139, y: 1.5, z: 43.368}
+  m_LocalPosition: {x: 32.92, y: 1.5, z: 43.368}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children:
   - {fileID: 963194228}
@@ -41961,7 +42085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212690231179c8444bc496e60965d2ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultName: 
+  defaultName: Terry Sullivan
   dialogue:
     reorderableList:
       canAdd: 1
@@ -41969,7 +42093,7 @@ MonoBehaviour:
       draggable: 1
       expandable: 1
       multipleSelection: 1
-      isExpanded: 0
+      isExpanded: 1
       label:
         m_Text: Keys
         m_Image: {fileID: 0}
@@ -41984,10 +42108,141 @@ MonoBehaviour:
       elementNameOverride: 
       elementIcon: {fileID: 0}
     reqReferences: {fileID: 0}
-    isExpanded: 0
-    _keyValues: 
-    _keys: 
-    _values: []
+    isExpanded: 1
+    _keyValues: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
+    _keys: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
+    _values:
+    - name: 
+      flagId: 
+      text: "Hey, Mrs. Wil... M-Ms. Wilson! How\u2019ve you been?"
+      prompts:
+      - text: "I\u2019m doin\u2019 alright, Terry. And you?"
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 1
+    - name: 
+      flagId: 
+      text: "Th-Th-The Purple House has been doin\u2019 great! Like a well-oiled
+        machine, in fact! Since after the vigil the other day, lotta people been
+        comin\u2019 around that I hadn\u2019t seen before! Me and Stacey did have
+        a little tiff in front of the customers yesterday, but other than that we
+        pushin\u2019 out orders and makin\u2019 good food just like before, M-Ms.
+        Wilson!"
+      prompts:
+      - text: I asked about you, Terry, not the diner.
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 2
+      - text: "That\u2019s great to hear. Avery would be happy to know you\u2019re
+          keeping the place runnin\u2019 nice and smooth."
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 6
+      - text: "What\u2019s with Stacey?"
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 7
+    - name: 
+      flagId: 
+      text: "Oh, me? Well\u2026 I\u2019ve been alright, I guess."
+      prompts:
+      - text: "Don\u2019t lie to me, sweetie."
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 3
+    - name: 
+      flagId: 
+      text: "No, I promise! I\u2019m doing fine. The main thing that\u2019s stressing
+        me out is what management is gonna look like from here on out. I just want
+        the best for this place, ya know?"
+      prompts:
+      - text: "Well I suppose I would be the one leadin\u2019 that decision."
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 4
+    - name: 
+      flagId: 
+      text: "Oh, well that\u2019s good, ain't it! If I remember correctly though,
+        you said you were too busy with your community work to ever take on the diner
+        even before we lost Avery. Is that right?"
+      prompts:
+      - text: "Yes sir! There\u2019s a lot of work that gotta be done at the school,
+          and the town needs people to run those monthly town halls. Poor Dick can\u2019t
+          do all that by himself."
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 5
+    - name: 
+      flagId: 
+      text: "Oh I\u2019m sure you\u2019ll make sure to pick someone who's responsible
+        and dedicated to this wonderful diner."
+      prompts:
+      - text: "I\u2019ll try my best, sweetheart. I already have a couple people
+          in mind already, so I\u2019ll let ya know when I decide."
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: -1
+    - name: 
+      flagId: 
+      text: "Thank you, ma\u2019am."
+      prompts: []
+    - name: 
+      flagId: meetStacey
+      text: "Oh, don\u2019t worry about that stuff. It was just one of our usual
+        arguments, that\u2019s all."
+      prompts:
+      - text: What was the matter this time?
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 8
+    - name: 
+      flagId: 
+      text: "Well, you see, I had brought some tickets into the kitchen, and she
+        just started saying I wasn\u2019t pacing out the customers and all."
+      prompts:
+      - text: Okay. And how did it get out into in front the customers?
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 9
+    - name: 
+      flagId: 
+      text: Well, when BLA BLA BLA
+      prompts:
+      - text: God damn it, Stacey ought to know not to cut up in front of customers
+          like that. Where is he? I need to talk to him.
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 10
+    - name: 
+      flagId: 
+      text: "O-Oh\u2026 he\u2019s over that way if you wanna talk with her."
+      prompts: []
+    - name: 
+      flagId: 
+      text: "O-Oh\u2026 he\u2019s over that way if you wanna talk with her."
+      prompts: []
 --- !u!64 &1662855924
 MeshCollider:
   m_ObjectHideFlags: 0
