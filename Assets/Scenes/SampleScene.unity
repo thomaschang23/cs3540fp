@@ -287,291 +287,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1001 &13267397
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1383799692419554, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 1876497922086962, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_Name
-      value: Rosannah
-      objectReference: {fileID: 0}
-    - target: {fileID: 1876497922086962, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_TagString
-      value: DialogueNPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.3125
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
---- !u!1 &13267398 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1876497922086962, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-  m_PrefabInstance: {fileID: 13267397}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &13267399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13267398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212690231179c8444bc496e60965d2ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultName: Rosannah Wilson
-  dialogue:
-    reorderableList:
-      canAdd: 1
-      canRemove: 1
-      draggable: 1
-      expandable: 1
-      multipleSelection: 1
-      isExpanded: 1
-      label:
-        m_Text: Keys
-        m_Image: {fileID: 0}
-        m_Tooltip: 
-      headerHeight: 18
-      footerHeight: 13
-      slideEasing: 0.15
-      verticalSpacing: 2
-      showDefaultBackground: 1
-      elementDisplayType: 0
-      elementNameProperty: 
-      elementNameOverride: 
-      elementIcon: {fileID: 0}
-    reqReferences: {fileID: 0}
-    isExpanded: 1
-    _keyValues: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
-    _keys: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
-    _values:
-    - name: 
-      flagId: meetRo
-      flagNote: 
-      text: Hey Les, sorry to bother you.
-      prompts:
-      - text: Oh, don't worry about it. I... I just wasn't expecting any visitors,
-          that's all.
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 1
-    - name: 
-      flagId: 
-      flagNote: 
-      text: Yeah, yeah...
-      prompts:
-      - text: Well, h-how have you been holding up?
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 2
-    - name: Rosannah Wilson
-      flagId: 
-      flagNote: 
-      text: Taking it one day at a time, ya know. I'm sure you aren't that far off
-      prompts:
-      - text: Yeah, totally...
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 3
-    - name: Rosannah Wilson
-      flagId: 
-      flagNote: 
-      text: Somehow the one damn time I go out of town in years, Avery gets damn
-        self killed. You can't make this up, Les, haha.
-      prompts:
-      - text: Look Ro, we're gonna find that bastard, with or without that good-for-nothing
-          police station, ya hear? D-Don't you forget that.
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 4
-      - text: It's just so terrible.
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 8
-    - name: Rosannah Wilson
-      flagId: trustRo
-      flagNote: 
-      text: Don't make promises you can't keep.
-      prompts:
-      - text: I'm not.
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 5
-    - name: Rosannah Wilson
-      flagId: 
-      flagNote: 
-      text: I can definitely see why Avery married you... Well, if you're actually
-        gonna try and get that son of a bitch, Bernie, I would be careful.
-      prompts:
-      - text: Bernie?
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 6
-    - name: Rosannah Wilson
-      flagId: 
-      flagNote: 
-      text: It couldn't be more obvious. Didn't you hear about what he did the other
-        week?
-      prompts:
-      - text: N-No, I didn't.
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 7
-    - name: Rosannah Wilson
-      flagId: 
-      flagNote: 
-      text: Well, I would tell you about it but I gotta run. Ask some of the people
-        around town and they'll give you the long and short of it. I'll see you around,
-        though. Don't be a stranger.
-      prompts:
-      - text: Yeah, of course.
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 10
-    - name: Rosannah Wilson
-      flagId: 
-      flagNote: 
-      text: And there's that Bernie not giving a shit.
-      prompts:
-      - text: Hmm?
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 9
-    - name: Rosannah Wilson
-      flagId: 
-      flagNote: 
-      text: You don't know about Bernie?
-      prompts:
-      - text: No, not really.
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 7
-    - name: Leslie
-      flagId: 
-      flagNote: 
-      text: "Well, I better head into town to check in on Stacey and Terry at the
-        Purple House to make sure the place hasn\u2019t damn burned down without
-        Avery being there..."
-      prompts:
-      - text: 
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 11
-    - name: Leslie
-      flagId: 
-      flagNote: 
-      text: "More importantly though, I need to ask around about Bernie while I\u2019m
-        out, too."
-      prompts:
-      - text: (End.)
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: -1
---- !u!136 &13267400
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13267398}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.75
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!64 &13267401
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13267398}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: 4837235d67e136e4b883adb2bafc73e8, type: 3}
 --- !u!1001 &17937662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6682,222 +6397,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4099166277382448, guid: 1c8c6bed3438b9141b6c6e2eb548b815, type: 3}
   m_PrefabInstance: {fileID: 449923097}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &476929577
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1876497922086962, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_Name
-      value: Stacey
-      objectReference: {fileID: 0}
-    - target: {fileID: 1876497922086962, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_TagString
-      value: DialogueNPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 18.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.67102265
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 26.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4143052088534468, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
---- !u!1 &476929578 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1876497922086962, guid: 7aad5b0274fd2894eafec31a58e26a32, type: 3}
-  m_PrefabInstance: {fileID: 476929577}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &476929579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476929578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212690231179c8444bc496e60965d2ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultName: Stacey Addis
-  dialogue:
-    reorderableList:
-      canAdd: 1
-      canRemove: 1
-      draggable: 1
-      expandable: 1
-      multipleSelection: 1
-      isExpanded: 1
-      label:
-        m_Text: Keys
-        m_Image: {fileID: 0}
-        m_Tooltip: 
-      headerHeight: 18
-      footerHeight: 13
-      slideEasing: 0.15
-      verticalSpacing: 2
-      showDefaultBackground: 1
-      elementDisplayType: 0
-      elementNameProperty: 
-      elementNameOverride: 
-      elementIcon: {fileID: 0}
-    reqReferences: {fileID: 0}
-    isExpanded: 1
-    _keyValues: 000000000100000002000000030000000400000005000000
-    _keys: 000000000100000002000000030000000400000005000000
-    _values:
-    - name: 
-      flagId: 
-      flagNote: 
-      text: Hello Ms. Wilson. What brings you around here?
-      prompts:
-      - text: "Well I\u2019m doing just fine, thank you for asking. Terry told me
-          about the tiff you two had in front of the customers the other day. Care
-          to explain yourself?"
-        dependant: meetStacey
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 1
-      - text: Nothin'
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: -1
-    - name: 
-      flagId: 
-      flagNote: 
-      text: "Ah, for crying out loud, it wasn\u2019t even that much. Terry had been
-        just seating all of the customers immediately and not pacing out the tickets
-        at all! Ain\u2019t that Hosting 101?"
-      prompts:
-      - text: Okay...
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 2
-    - name: 
-      flagId: 
-      flagNote: 
-      text: "So when he came in to give me my umpteenth ticket in a row, I told her
-        to stop seating those customers so damn fast. Then, I overheard some customers
-        complainin\u2019 about not getting their food, and she had the nerve to blame
-        me!"
-      prompts:
-      - text: "Now you know that ain\u2019t the reason to make a big fuss like you
-          did."
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 3
-    - name: 
-      flagId: 
-      flagNote: 
-      text: "I couldn\u2019t have Terry changing the story like that, ma\u2019am!
-        He likes to lie on me enough as it is\u2026"
-      prompts:
-      - text: ...
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 4
-    - name: 
-      flagId: 
-      flagNote: 
-      text: "... but I do apologize, Ms. Wilson. It won\u2019t happen again. I was
-        just really stressed that night, you know, because of Avery and all."
-      prompts:
-      - text: "I guess so\u2026 Just keep better care of yourself from now on, ya
-          hear?"
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 5
-    - name: 
-      flagId: 
-      flagNote: 
-      text: Okay, okay, I will.
-      prompts:
-      - text: (End.)
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: -1
---- !u!64 &476929580
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476929578}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: 4837235d67e136e4b883adb2bafc73e8, type: 3}
---- !u!136 &476929581
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476929578}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.75
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &483423498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29870,292 +29369,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1001 &953512514
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1040643676778012, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
-      propertyPath: m_Name
-      value: Police Officer
-      objectReference: {fileID: 0}
-    - target: {fileID: 1040643676778012, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
-      propertyPath: m_TagString
-      value: DialogueNPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457282994381246, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457282994381246, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457282994381246, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.50544107
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457282994381246, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 52.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457282994381246, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457282994381246, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457282994381246, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457282994381246, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457282994381246, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457282994381246, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457282994381246, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
---- !u!1 &953512515 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1040643676778012, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
-  m_PrefabInstance: {fileID: 953512514}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &953512516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953512515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212690231179c8444bc496e60965d2ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultName: 
-  dialogue:
-    reorderableList:
-      canAdd: 1
-      canRemove: 1
-      draggable: 1
-      expandable: 1
-      multipleSelection: 1
-      isExpanded: 1
-      label:
-        m_Text: Keys
-        m_Image: {fileID: 0}
-        m_Tooltip: 
-      headerHeight: 18
-      footerHeight: 13
-      slideEasing: 0.15
-      verticalSpacing: 2
-      showDefaultBackground: 1
-      elementDisplayType: 0
-      elementNameProperty: 
-      elementNameOverride: 
-      elementIcon: {fileID: 0}
-    reqReferences: {fileID: 0}
-    isExpanded: 1
-    _keyValues: 00000000020000000300000004000000050000003200000064000000
-    _keys: 00000000020000000300000004000000050000003200000064000000
-    _values:
-    - name: Police Officer
-      flagId: 
-      flagNote: 
-      text: Hello Madam, how may I help you?
-      prompts:
-      - text: I think I know who killed Avery
-        dependant: russelExposeBernie
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 2
-      - text: Nothin'
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: -1
-    - name: Police Officer
-      flagId: 
-      flagNote: 
-      text: Oh! Well who do you think did it?
-      prompts:
-      - text: Rosannah
-        dependant: meetRo
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 3
-      - text: Bernie
-        dependant: russelExposeBernie
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 4
-      - text: Stacey
-        dependant: meetStacey
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 5
-    - name: Police Officer
-      flagId: 
-      flagNote: 
-      text: Are you sure?
-      prompts:
-      - text: Yes
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 50
-      - text: No
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: -1
-    - name: Police Officer
-      flagId: 
-      flagNote: 
-      text: Are you sure?
-      prompts:
-      - text: Yes
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 100
-      - text: No
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: -1
-    - name: Police Officer
-      flagId: 
-      flagNote: 
-      text: Are you sure?
-      prompts:
-      - text: Yes
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 50
-      - text: No
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: -1
-    - name: ' '
-      flagId: 
-      flagNote: 
-      text: Sorry you lost :(
-      prompts:
-      - text: (Continue to roam around.)
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 1235257034}
-              m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
-              m_MethodName: endGameFailure
-              m_Mode: 1
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
-        nextNodeId: -1
-    - name: ' '
-      flagId: 
-      flagNote: 
-      text: You were correct!
-      prompts:
-      - text: (Continue to roam around.)
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 1235257034}
-              m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
-              m_MethodName: endGameSuccess
-              m_Mode: 1
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
-        nextNodeId: -1
---- !u!64 &953512517
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953512515}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300006, guid: 4837235d67e136e4b883adb2bafc73e8, type: 3}
---- !u!136 &953512518
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953512515}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.75
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &953512521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953512515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6614fc1a827579643a115baae3aa35e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startPanel: {r: 0, g: 0, b: 0, a: 0}
-  startText: {r: 1, g: 1, b: 1, a: 0}
-  endPanel: {r: 0, g: 0, b: 0, a: 1}
-  endText: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -42831,294 +42044,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1001 &1662855921
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 150176, guid: 4b94a93fa70935041b61d500fb573a22, type: 3}
-      propertyPath: m_Name
-      value: Terry
-      objectReference: {fileID: 0}
-    - target: {fileID: 150176, guid: 4b94a93fa70935041b61d500fb573a22, type: 3}
-      propertyPath: m_TagString
-      value: DialogueNPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 472458, guid: 4b94a93fa70935041b61d500fb573a22, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 472458, guid: 4b94a93fa70935041b61d500fb573a22, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 18.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 472458, guid: 4b94a93fa70935041b61d500fb573a22, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.67102253
-      objectReference: {fileID: 0}
-    - target: {fileID: 472458, guid: 4b94a93fa70935041b61d500fb573a22, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 24.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 472458, guid: 4b94a93fa70935041b61d500fb573a22, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 472458, guid: 4b94a93fa70935041b61d500fb573a22, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 472458, guid: 4b94a93fa70935041b61d500fb573a22, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 472458, guid: 4b94a93fa70935041b61d500fb573a22, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 472458, guid: 4b94a93fa70935041b61d500fb573a22, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 472458, guid: 4b94a93fa70935041b61d500fb573a22, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 472458, guid: 4b94a93fa70935041b61d500fb573a22, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4b94a93fa70935041b61d500fb573a22, type: 3}
---- !u!1 &1662855922 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 150176, guid: 4b94a93fa70935041b61d500fb573a22, type: 3}
-  m_PrefabInstance: {fileID: 1662855921}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1662855923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662855922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212690231179c8444bc496e60965d2ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultName: Terry Sullivan
-  dialogue:
-    reorderableList:
-      canAdd: 1
-      canRemove: 1
-      draggable: 1
-      expandable: 1
-      multipleSelection: 1
-      isExpanded: 1
-      label:
-        m_Text: Keys
-        m_Image: {fileID: 0}
-        m_Tooltip: 
-      headerHeight: 18
-      footerHeight: 13
-      slideEasing: 0.15
-      verticalSpacing: 2
-      showDefaultBackground: 1
-      elementDisplayType: 0
-      elementNameProperty: 
-      elementNameOverride: 
-      elementIcon: {fileID: 0}
-    reqReferences: {fileID: 0}
-    isExpanded: 1
-    _keyValues: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
-    _keys: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
-    _values:
-    - name: 
-      flagId: meetTerry
-      flagNote: 
-      text: "Hey, Mrs. Wil... M-Ms. Wilson! How\u2019ve you been?"
-      prompts:
-      - text: "I\u2019m doin\u2019 alright, Terry. And you?"
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 1
-    - name: 
-      flagId: 
-      flagNote: 
-      text: "Th-Th-The Purple House has been doin\u2019 great! Like a well-oiled
-        machine, in fact! Since after the vigil the other day, lotta people been
-        comin\u2019 around that I hadn\u2019t seen before! Me and Stacey did have
-        a little tiff in front of the customers yesterday, but other than that we
-        pushin\u2019 out orders and makin\u2019 good food just like before, M-Ms.
-        Wilson!"
-      prompts:
-      - text: I asked about you, Terry, not the diner.
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 2
-      - text: "That\u2019s great to hear. Avery would be happy to know you\u2019re
-          keeping the place runnin\u2019 nice and smooth."
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 6
-      - text: "What\u2019s with Stacey?"
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 7
-    - name: 
-      flagId: 
-      flagNote: 
-      text: "Oh, me? Well\u2026 I\u2019ve been alright, I guess."
-      prompts:
-      - text: "Don\u2019t lie to me, sweetie."
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 3
-    - name: 
-      flagId: 
-      flagNote: 
-      text: "No, I promise! I\u2019m doing fine. The main thing that\u2019s stressing
-        me out is what management is gonna look like from here on out. I just want
-        the best for this place, ya know?"
-      prompts:
-      - text: "Well I suppose I would be the one leadin\u2019 that decision."
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 4
-    - name: 
-      flagId: 
-      flagNote: 
-      text: "Oh, well that\u2019s good, ain't it! If I remember correctly though,
-        you said you were too busy with your community work to ever take on the diner
-        even before we lost Avery. Is that right?"
-      prompts:
-      - text: "Yes sir! There\u2019s a lot of work that gotta be done at the school,
-          and the town needs people to run those monthly town halls. Poor Dick can\u2019t
-          do all that by himself."
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 5
-    - name: 
-      flagId: 
-      flagNote: 
-      text: "Oh I\u2019m sure you\u2019ll make sure to pick someone who's responsible
-        and dedicated to this wonderful diner."
-      prompts:
-      - text: "I\u2019ll try my best, sweetheart. I already have a couple people
-          in mind already, so I\u2019ll let ya know when I decide."
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: -1
-    - name: 
-      flagId: 
-      flagNote: 
-      text: "Thank you, ma\u2019am."
-      prompts:
-      - text: (End.)
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: -1
-    - name: 
-      flagId: meetStacey
-      flagNote: 
-      text: "Oh, don\u2019t worry about that stuff. It was just one of our usual
-        arguments, that\u2019s all."
-      prompts:
-      - text: What was the matter this time?
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 8
-    - name: 
-      flagId: 
-      flagNote: 
-      text: "Well, you see, I had brought some tickets into the kitchen, and she
-        just started saying I wasn\u2019t pacing out the customers and all."
-      prompts:
-      - text: Okay. And how did it get out into in front the customers?
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 9
-    - name: 
-      flagId: 
-      flagNote: 
-      text: Well, when BLA BLA BLA
-      prompts:
-      - text: God damn it, Stacey ought to know not to cut up in front of customers
-          like that. Where is he? I need to talk to her.
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 10
-    - name: 
-      flagId: 
-      flagNote: 
-      text: "O-Oh\u2026 he\u2019s over that way if you wanna talk with her."
-      prompts:
-      - text: (End.)
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: -1
-    - name: 
-      flagId: 
-      flagNote: 
-      text: 
-      prompts: []
---- !u!64 &1662855924
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662855922}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300028, guid: fd7d68a65822e4a44a9ef78850e64cfc, type: 3}
---- !u!136 &1662855925
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662855922}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.75
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!43 &1671975747
 Mesh:
   m_ObjectHideFlags: 0
@@ -46032,240 +44957,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1021426032410705740, guid: d9dad222898bfee4e8c200917b9783e4, type: 3}
   m_PrefabInstance: {fileID: 2002253998}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2004759691
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1800371080893130, guid: e169e4d9dbd157b498e582065a5f9302, type: 3}
-      propertyPath: m_Name
-      value: Russel
-      objectReference: {fileID: 0}
-    - target: {fileID: 1800371080893130, guid: e169e4d9dbd157b498e582065a5f9302, type: 3}
-      propertyPath: m_TagString
-      value: DialogueNPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 4670764120559952, guid: e169e4d9dbd157b498e582065a5f9302, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4670764120559952, guid: e169e4d9dbd157b498e582065a5f9302, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 23.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 4670764120559952, guid: e169e4d9dbd157b498e582065a5f9302, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.67102253
-      objectReference: {fileID: 0}
-    - target: {fileID: 4670764120559952, guid: e169e4d9dbd157b498e582065a5f9302, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 20.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 4670764120559952, guid: e169e4d9dbd157b498e582065a5f9302, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4670764120559952, guid: e169e4d9dbd157b498e582065a5f9302, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4670764120559952, guid: e169e4d9dbd157b498e582065a5f9302, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4670764120559952, guid: e169e4d9dbd157b498e582065a5f9302, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4670764120559952, guid: e169e4d9dbd157b498e582065a5f9302, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4670764120559952, guid: e169e4d9dbd157b498e582065a5f9302, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4670764120559952, guid: e169e4d9dbd157b498e582065a5f9302, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e169e4d9dbd157b498e582065a5f9302, type: 3}
---- !u!1 &2004759692 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1800371080893130, guid: e169e4d9dbd157b498e582065a5f9302, type: 3}
-  m_PrefabInstance: {fileID: 2004759691}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2004759693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2004759692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212690231179c8444bc496e60965d2ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultName: Russel Murray
-  dialogue:
-    reorderableList:
-      canAdd: 1
-      canRemove: 1
-      draggable: 1
-      expandable: 1
-      multipleSelection: 1
-      isExpanded: 1
-      label:
-        m_Text: Keys
-        m_Image: {fileID: 0}
-        m_Tooltip: 
-      headerHeight: 18
-      footerHeight: 13
-      slideEasing: 0.15
-      verticalSpacing: 2
-      showDefaultBackground: 1
-      elementDisplayType: 0
-      elementNameProperty: 
-      elementNameOverride: 
-      elementIcon: {fileID: 0}
-    reqReferences: {fileID: 0}
-    isExpanded: 1
-    _keyValues: 0000000001000000020000000300000004000000050000000600000007000000
-    _keys: 0000000001000000020000000300000004000000050000000600000007000000
-    _values:
-    - name: 
-      flagId: russelExposeBernie
-      flagNote: 
-      text: Hey, Les! Hope you're doing alright!
-      prompts:
-      - text: I'm alright. Thanks for asking.
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 1
-    - name: 
-      flagId: 
-      flagNote: 
-      text: Of course, anything for someone who meant so much to my childhood friend.
-        Do you wanna talk about anything?
-      prompts:
-      - text: Actually, yeah! Have you heard anything about Bernie Martins recently?
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 2
-      - text: Nothin'
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: -1
-    - name: 
-      flagId: 
-      flagNote: 
-      text: Oh, Bernie? Nothin' much other than his stupid little speech he gave
-        at the saloon a couple days ago.
-      prompts:
-      - text: What did he say?
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 3
-    - name: 
-      flagId: 
-      flagNote: 
-      text: Do you not know? He was sloppy drunk- as he usually is at the saloon-
-        and he started talkin all big, hurling insults left and right about your
-        late husband.
-      prompts:
-      - text: 
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 4
-    - name: 
-      flagId: 
-      flagNote: 
-      text: It was probably better that you weren't there.
-      prompts:
-      - text: Why was he sayin' all that? What did Avery ever do?
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 5
-    - name: 
-      flagId: 
-      flagNote: 
-      text: I don't know, Les... I really don't. All I know is that everyone at the
-        saloon that night agreed it was mighty convenient that Avery was murdered
-        a little before the primary vote for town elections- both of them running
-        mayor and all...
-      prompts:
-      - text: I see...
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 6
-    - name: 
-      flagId: 
-      flagNote: 
-      text: He hasn't been seen around much lately since
-      prompts:
-      - text: Thanks for tellin' me, Russel.
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: 7
-    - name: 
-      flagId: 
-      flagNote: 
-      text: Anything for you, sweetheart. Take it easy now.
-      prompts:
-      - text: (End.)
-        dependant: 
-        e:
-          m_PersistentCalls:
-            m_Calls: []
-        nextNodeId: -1
---- !u!64 &2004759694
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2004759692}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300010, guid: 4837235d67e136e4b883adb2bafc73e8, type: 3}
---- !u!136 &2004759695
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2004759692}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.75
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!43 &2006532588
 Mesh:
   m_ObjectHideFlags: 0
@@ -51234,6 +49925,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5997835666890670869}
   m_CullTransparentMesh: 0
+--- !u!1001 &1999724911082014278
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1999724911636060477, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636060477, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636060477, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.67102253
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636060477, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636060477, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636060477, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636060477, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636060477, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636060477, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636060477, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636060477, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636276759, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: m_Name
+      value: Terry
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
 --- !u!114 &2274470676859414285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51310,6 +50058,67 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 20}
   m_SizeDelta: {x: -400, y: 200}
   m_Pivot: {x: 0.5, y: 0}
+--- !u!1001 &3425352048752860501
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3376163181022309882, guid: a0522eb3dd9f9024388b4c578b998121, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9799a0c9e3b73bb478f0894e6f48c0f5, type: 2}
+    - target: {fileID: 3424973906876664148, guid: a0522eb3dd9f9024388b4c578b998121, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424973906876664148, guid: a0522eb3dd9f9024388b4c578b998121, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424973906876664148, guid: a0522eb3dd9f9024388b4c578b998121, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3125
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424973906876664148, guid: a0522eb3dd9f9024388b4c578b998121, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424973906876664148, guid: a0522eb3dd9f9024388b4c578b998121, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424973906876664148, guid: a0522eb3dd9f9024388b4c578b998121, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424973906876664148, guid: a0522eb3dd9f9024388b4c578b998121, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424973906876664148, guid: a0522eb3dd9f9024388b4c578b998121, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424973906876664148, guid: a0522eb3dd9f9024388b4c578b998121, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424973906876664148, guid: a0522eb3dd9f9024388b4c578b998121, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424973906876664148, guid: a0522eb3dd9f9024388b4c578b998121, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3427205371025503394, guid: a0522eb3dd9f9024388b4c578b998121, type: 3}
+      propertyPath: m_Name
+      value: Rosannah
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a0522eb3dd9f9024388b4c578b998121, type: 3}
 --- !u!1001 &3673559620244552534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51431,6 +50240,67 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &6074740132332601741
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6071828536951716448, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071828536951716448, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071828536951716448, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.67102265
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071828536951716448, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071828536951716448, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071828536951716448, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071828536951716448, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071828536951716448, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071828536951716448, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071828536951716448, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071828536951716448, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074059973317527446, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: m_Name
+      value: Stacey
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133356217262530254, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9799a0c9e3b73bb478f0894e6f48c0f5, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
 --- !u!223 &6844038737206042103
 Canvas:
   m_ObjectHideFlags: 0
@@ -51474,6 +50344,136 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!1001 &7480964308226596293
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7386616755488157763, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9799a0c9e3b73bb478f0894e6f48c0f5, type: 2}
+    - target: {fileID: 7480964308909535105, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: dialogue._values.Array.data[5].prompts.Array.data[0].e.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1235257034}
+    - target: {fileID: 7480964308909535105, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: dialogue._values.Array.data[6].prompts.Array.data[0].e.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1235257034}
+    - target: {fileID: 7481054105324781979, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: m_Name
+      value: Police Officer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.50544107
+      objectReference: {fileID: 0}
+    - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 52.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+--- !u!1001 &7778978612839144417
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7684896189424519252, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9799a0c9e3b73bb478f0894e6f48c0f5, type: 2}
+    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.67102253
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778313284668685728, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
+      propertyPath: m_Name
+      value: Russel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
 --- !u!224 &7893317816917914723
 RectTransform:
   m_ObjectHideFlags: 0
