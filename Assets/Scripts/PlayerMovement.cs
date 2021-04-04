@@ -26,11 +26,14 @@ public class PlayerMovement : MonoBehaviour
 
     private GameObject npc;
 
+    private UIManager ui;
+
     [HideInInspector]
     public bool canMove = true;
 
     void Start()
     {
+        ui = FindObjectOfType<UIManager>();
         cc = GetComponent<CharacterController>();
         audioSource = GetComponent<AudioSource>();
 
@@ -45,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
         if (npc != null && Input.GetButtonDown("Fire1"))
         {
             DialogueManager.TriggerDialogue(npc);
+            npc = null;
         }
         if (Input.GetKeyDown(KeyCode.LeftAlt))
         {
@@ -103,20 +107,19 @@ public class PlayerMovement : MonoBehaviour
         if (cc.velocity.magnitude > 1f)
         {
             if (!audioSource.isPlaying)
-			{
+            {
                 audioSource.volume = Random.Range(0.8f, 1f);
                 audioSource.pitch = Random.Range(0.8f, 1.1f);
                 audioSource.Play();
             }
         }
         else
-		{
+        {
             if (audioSource.isPlaying)
-			{
-                Debug.Log("Stop");
+            {
                 audioSource.Stop();
-			}
-		}
+            }
+        }
     }
 
     public static void mouseChange(int newState = 0)
@@ -146,25 +149,28 @@ public class PlayerMovement : MonoBehaviour
             mouseUnlocked = false;
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
-        }  
+        }
     }
 
     public void FixedUpdate()
     {
-        RaycastHit hit;
-        Ray ray = playerCam.ScreenPointToRay(Input.mousePosition);
-        if (
-          Physics.Raycast(ray, out hit, dialogueTriggerDistance)
-          && hit.collider.CompareTag("DialogueNPC")
-        )
+        if (!ui.IsDialogueOpen())
         {
-            npc = hit.collider.gameObject;
-            FindObjectOfType<DialogueManager>().ShowDialogueHint();
-        }
-        else
-        {
-            npc = null;
-            FindObjectOfType<DialogueManager>().HideDialogueHint();
+            RaycastHit hit;
+            Ray ray = playerCam.ScreenPointToRay(Input.mousePosition);
+            if (
+              Physics.Raycast(ray, out hit, dialogueTriggerDistance)
+              && hit.collider.CompareTag("DialogueNPC")
+            )
+            {
+                npc = hit.collider.gameObject;
+                FindObjectOfType<DialogueManager>().ShowDialogueHint();
+            }
+            else
+            {
+                npc = null;
+                FindObjectOfType<DialogueManager>().HideDialogueHint();
+            }
         }
     }
 }

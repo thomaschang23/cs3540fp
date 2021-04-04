@@ -53,4 +53,9 @@ public class UIManager : MonoBehaviour
             PlayerMovement.mouseChange(1);
         }
     }
+
+    public bool IsDialogueOpen()
+    {
+        return isDialogueOpen;
+    }
 }
