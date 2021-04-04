@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 7452055554829859776}
   - component: {fileID: 7438126629534505665}
   - component: {fileID: 7438126629534505670}
+  - component: {fileID: 8720598117449853861}
   m_Layer: 0
   m_Name: SM_Bld_Large_BackDoor_01
   m_TagString: Door
@@ -201,7 +202,7 @@ MeshCollider:
   m_GameObject: {fileID: 7438126629534505664}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -218,6 +219,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a9d87f9a3c5e7489bc2bafb5c380cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8720598117449853861
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7438126629534505664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.217465, y: 2.1130788, z: 0.08509462}
+  m_Center: {x: 0.60873, y: 1.0565394, z: 0.028106777}
 --- !u!1 &7438128528584290140
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +244,7 @@ GameObject:
   - component: {fileID: 7442461245232891198}
   - component: {fileID: 7452697392587940348}
   - component: {fileID: 7438128528584290141}
+  - component: {fileID: 4499497568350370054}
   m_Layer: 0
   m_Name: SM_Bld_Double_FrontDoor_01
   m_TagString: Untagged
@@ -310,11 +325,24 @@ MeshCollider:
   m_GameObject: {fileID: 7438128528584290140}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: a8f7a0d6c0e393448a0e95b9627c23b9, type: 3}
+--- !u!65 &4499497568350370054
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7438128528584290140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2105334, y: 2.294114, z: 0.08900835}
+  m_Center: {x: 0.6052667, y: 1.147057, z: -0.04096223}
 --- !u!1 &7438131615384107236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,6 +1193,7 @@ GameObject:
   - component: {fileID: 7442340313553331648}
   - component: {fileID: 7452496353025590304}
   - component: {fileID: 7438670499612661303}
+  - component: {fileID: 5582475185827590509}
   m_Layer: 0
   m_Name: SM_Bld_Double_FrontDoor_02
   m_TagString: Untagged
@@ -1245,11 +1274,24 @@ MeshCollider:
   m_GameObject: {fileID: 7438670499612661302}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300006, guid: a8f7a0d6c0e393448a0e95b9627c23b9, type: 3}
+--- !u!65 &5582475185827590509
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7438670499612661302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2105343, y: 2.294114, z: 0.08900835}
+  m_Center: {x: -0.60526717, y: 1.1919122, z: 0.085598014}
 --- !u!1 &7438679820000683944
 GameObject:
   m_ObjectHideFlags: 0

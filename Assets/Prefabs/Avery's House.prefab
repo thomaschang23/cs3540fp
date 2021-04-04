@@ -759,6 +759,7 @@ GameObject:
   - component: {fileID: 5292107024913891380}
   - component: {fileID: 5271338748033922037}
   - component: {fileID: 5271338748033922038}
+  - component: {fileID: 810549172670838360}
   m_Layer: 0
   m_Name: SM_Building_Single_FrontDoor_02
   m_TagString: Door
@@ -851,11 +852,24 @@ MeshCollider:
   m_GameObject: {fileID: 5271338748033922036}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 30d7ce72ebe404c43be72759b81f411e, type: 3}
+--- !u!65 &810549172670838360
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5271338748033922036}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2105345, y: 2.2941139, z: 0.08900835}
+  m_Center: {x: -0.6052672, y: 1.1470569, z: -0.0409601}
 --- !u!1 &8090336329747633489
 GameObject:
   m_ObjectHideFlags: 0
