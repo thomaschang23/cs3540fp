@@ -24,6 +24,7 @@ public class DialogueManager : MonoBehaviour
     private Dialogue tree;
     private int currentNodeIdx;
     private string currentDefaultName;
+    private DialogueTrigger currentTrigger;
 
     DialoguePrompt[] availablePrompts;
 
@@ -32,8 +33,9 @@ public class DialogueManager : MonoBehaviour
         uiManager = GetComponent<UIManager>();
     }
 
-    public void StartDialogue(Dialogue dialogue, string defaultName)
+    public void StartDialogue(Dialogue dialogue, string defaultName, DialogueTrigger trigger)
     {
+        currentTrigger = trigger;
         uiManager.ToggleDialogue();
 
         currentDefaultName = defaultName;
@@ -57,7 +59,7 @@ public class DialogueManager : MonoBehaviour
 
             if (childrenLength == 0)
             {
-                uiManager.ToggleDialogue();
+                EndDialogue();
                 return;
             }
             else if (childrenLength > promptIdx)
@@ -72,7 +74,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            uiManager.ToggleDialogue();
+            EndDialogue();
         }
     }
 
@@ -162,7 +164,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            uiManager.ToggleDialogue();
+            EndDialogue();
         }
     }
 
@@ -187,8 +189,15 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueHint.text = "Click to start dialogue.";
     }
+
     public void HideDialogueHint()
     {
         dialogueHint.text = "";
+    }
+
+    public void EndDialogue()
+    {
+        currentTrigger.DialogueEnded();
+        uiManager.ToggleDialogue();
     }
 }
