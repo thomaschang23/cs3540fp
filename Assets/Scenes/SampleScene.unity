@@ -28648,12 +28648,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f9dba9c08b804409ccee63f67c4036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wSpeed: 5
-  rSpeed: 7
-  jSpeed: 5
+  wSpeed: 6
+  rSpeed: 9
+  jSpeed: 6.5
   gravity: 20
   playerCam: {fileID: 963194227}
-  sensitivity: 2
+  sensitivity: 0.9
   vertLookLimit: 75
   dialogueTriggerDistance: 2
   canMove: 1
