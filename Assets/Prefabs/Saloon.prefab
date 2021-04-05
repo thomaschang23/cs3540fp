@@ -63,6 +63,7 @@ GameObject:
   - component: {fileID: 3639903664980091504}
   - component: {fileID: 3650282282192195588}
   - component: {fileID: 3672873741604398059}
+  - component: {fileID: 2717886340667254743}
   m_Layer: 0
   m_Name: SM_Bld_Saloon_RoomDoor_03
   m_TagString: Untagged
@@ -147,6 +148,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300018, guid: 057236d50c13d864cbdb745fe796cfa9, type: 3}
+--- !u!54 &2717886340667254743
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3672873741604398058}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3672945109317944714
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,6 +176,7 @@ GameObject:
   - component: {fileID: 3639830994971789064}
   - component: {fileID: 3650488375008514374}
   - component: {fileID: 3672945109317944715}
+  - component: {fileID: 5278903777850351138}
   m_Layer: 0
   m_Name: SM_Bld_Saloon_Glass
   m_TagString: Untagged
@@ -243,6 +261,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300020, guid: 057236d50c13d864cbdb745fe796cfa9, type: 3}
+--- !u!54 &5278903777850351138
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3672945109317944714}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3673559619352677424
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,6 +425,7 @@ GameObject:
   - component: {fileID: 3652290938169824100}
   - component: {fileID: 3673843152020937612}
   - component: {fileID: 3673843152020937615}
+  - component: {fileID: 3443808976062329148}
   m_Layer: 0
   m_Name: SM_Bld_Saloon_Swinging_Doors_02
   m_TagString: Door
@@ -487,6 +522,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a9d87f9a3c5e7489bc2bafb5c380cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &3443808976062329148
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3673843152020937614}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3674124758037110948
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,6 +646,7 @@ GameObject:
   - component: {fileID: 3642959291008224484}
   - component: {fileID: 3652142957093208390}
   - component: {fileID: 3674183146789288961}
+  - component: {fileID: 8272608863547080217}
   m_Layer: 0
   m_Name: SM_Bld_Saloon_01
   m_TagString: Untagged
@@ -688,6 +740,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 057236d50c13d864cbdb745fe796cfa9, type: 3}
+--- !u!54 &8272608863547080217
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3674183146789288960}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3674184462749300564
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,6 +769,7 @@ GameObject:
   - component: {fileID: 3652201645095784932}
   - component: {fileID: 3674184462749300565}
   - component: {fileID: 3674184462749300562}
+  - component: {fileID: 278166261294364111}
   m_Layer: 0
   m_Name: SM_Bld_Saloon_Swinging_Doors_01
   m_TagString: Door
@@ -797,6 +866,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 057236d50c13d864cbdb745fe796cfa9, type: 3}
+--- !u!54 &278166261294364111
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3674184462749300564}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3674211585292565764
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,6 +895,7 @@ GameObject:
   - component: {fileID: 3650369615665738418}
   - component: {fileID: 3674211585292565765}
   - component: {fileID: 873020821740630427}
+  - component: {fileID: 2133923467667506442}
   m_Layer: 0
   m_Name: SM_Bld_Saloon_UpstairsDoor_02
   m_TagString: Door
@@ -907,6 +993,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a9d87f9a3c5e7489bc2bafb5c380cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &2133923467667506442
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3674211585292565764}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3674451970446920346
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,6 +1021,7 @@ GameObject:
   - component: {fileID: 3642551369151494372}
   - component: {fileID: 3650624325186588222}
   - component: {fileID: 3674451970446920347}
+  - component: {fileID: 454072064350102278}
   m_Layer: 0
   m_Name: SM_Bld_Saloon_RoomDoor_02
   m_TagString: Untagged
@@ -1003,6 +1106,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300016, guid: 057236d50c13d864cbdb745fe796cfa9, type: 3}
+--- !u!54 &454072064350102278
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3674451970446920346}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3674573101290500312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,6 +1134,7 @@ GameObject:
   - component: {fileID: 3643108293133836034}
   - component: {fileID: 3650720378115698570}
   - component: {fileID: 3674573101290500313}
+  - component: {fileID: 131950278880349949}
   m_Layer: 0
   m_Name: SM_Bld_Saloon_RoomDoor_01
   m_TagString: Untagged
@@ -1099,6 +1219,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300014, guid: 057236d50c13d864cbdb745fe796cfa9, type: 3}
+--- !u!54 &131950278880349949
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3674573101290500312}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3674583011039672402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,6 +1248,7 @@ GameObject:
   - component: {fileID: 3650992363467873408}
   - component: {fileID: 3674583011039672403}
   - component: {fileID: 2941987986426961575}
+  - component: {fileID: 7364756313598268252}
   m_Layer: 0
   m_Name: SM_Bld_Saloon_UpstairsDoor_01
   m_TagString: Door
@@ -1209,6 +1346,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a9d87f9a3c5e7489bc2bafb5c380cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &7364756313598268252
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3674583011039672402}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3674907721982529644
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,6 +1374,7 @@ GameObject:
   - component: {fileID: 3642486134605140908}
   - component: {fileID: 3650599592855751548}
   - component: {fileID: 757424634064976927}
+  - component: {fileID: 2347726208996732787}
   m_Layer: 0
   m_Name: SM_Bld_Saloon_UpstairsDoor_01_Glass
   m_TagString: Untagged
@@ -1305,6 +1459,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300008, guid: 057236d50c13d864cbdb745fe796cfa9, type: 3}
+--- !u!54 &2347726208996732787
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3674907721982529644}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5697284542941119427
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DialogueNPC
   - Door
+  - Pickup
   layers:
   - Default
   - TransparentFX

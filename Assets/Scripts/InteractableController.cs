@@ -6,32 +6,61 @@ public class InteractableController : MonoBehaviour
 {
     public AudioClip doorSFX;
     public float interactableDistance = 3f;
+    public GameObject hand;
+    public float smooth = 5;
 
+    bool holding;
+    GameObject heldObject;
     private KeyCode interactKey = KeyCode.E;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         RaycastHit hit;
-
-        if (Physics.Raycast(transform.position, transform.forward, out hit, interactableDistance))
+     
+        if (holding)
         {
-            if (hit.collider.CompareTag("Door"))
+            heldObject.transform.position = Vector3.Lerp(heldObject.transform.position,
+                hand.transform.position, Time.deltaTime * smooth);
+            
+            if(Input.GetKeyDown(KeyCode.E))
+			{
+                holding = false;
+                heldObject.GetComponent<Rigidbody>().isKinematic = false;
+                heldObject = null;
+            }
+        }
+        else
+        {
+            if (Physics.Raycast(transform.position, transform.forward, out hit, interactableDistance))
             {
                 if (Input.GetKeyDown(interactKey))
                 {
-                    GameObject door = hit.collider.gameObject;
-                    door.GetComponent<DoorController>().toggleDoor();
+                    if (hit.collider.CompareTag("Pickup"))
+                    {
+                        holding = true;
+                        heldObject = hit.collider.gameObject;
+                        heldObject.GetComponent<Rigidbody>().isKinematic = true;
+                    }
+                }
 
-                    AudioSource.PlayClipAtPoint(doorSFX, door.transform.position);
+            }
+        }
+
+
+        if (Physics.Raycast(transform.position, transform.forward, out hit, interactableDistance))
+        {
+            if (Input.GetKeyDown(interactKey))
+			{
+                if (hit.collider.CompareTag("Door"))
+                {
+                        GameObject door = hit.collider.gameObject;
+                        door.GetComponent<DoorController>().toggleDoor();
+
+                        AudioSource.PlayClipAtPoint(doorSFX, door.transform.position);
                 }
             }
+                
         }
     }
 }
