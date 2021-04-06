@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class NoteManager : MonoBehaviour
 {
     public Text pageView;
+    public AudioClip noteToggle;
+    public GameObject player;
 
     private int currentPage;
     private List<List<string>> pages;
@@ -53,6 +55,7 @@ public class NoteManager : MonoBehaviour
 
     private void DisplayCurrentPage()
     {
+        AudioSource.PlayClipAtPoint(noteToggle, player.transform.position, 0.2f); // TODO: make a class of global variables and use static global variable player
         if (pages.Count > 0)
         {
             pageView.text = ToPageView(pages[currentPage]);
