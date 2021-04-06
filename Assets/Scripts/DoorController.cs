@@ -17,6 +17,7 @@ public class DoorController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (isOpen)
 		{
             doorAnimator.SetBool("doorState", true);
