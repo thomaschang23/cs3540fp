@@ -20,8 +20,13 @@ public class Examine : MonoBehaviour
 
     Text popup;
 
+    static List<bool> bools = new List<bool>();
+    int index;
+
     void Start()
     {
+        bools.Add(false);
+        index = bools.Count - 1;
         popup = GameObject.FindGameObjectWithTag("PopUpText").GetComponent<Text>();
         uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
         cam = Camera.main;
@@ -33,6 +38,7 @@ public class Examine : MonoBehaviour
         ExamineObj();
         RotateObj();
         QuitExamine();
+
     }
 
 
@@ -41,13 +47,14 @@ public class Examine : MonoBehaviour
         RaycastHit hit;
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hit, 2) && hit.transform.gameObject == this.gameObject)
+        if (Physics.Raycast(ray, out hit, 3) && hit.transform.gameObject == this.gameObject)
         {
             if (Input.GetMouseButtonDown(0) && examining == false)
             {
                 examining = uiManager.ToggleExamine();
                 if (examining)
                 {
+                    bools[index] = true;
                     popup.text = "Right Click to Exit";
                     targObj = hit.transform.gameObject;
 
@@ -61,12 +68,15 @@ public class Examine : MonoBehaviour
             }
             else if (examining == false)
             {
+                bools[index] = true;
                 popup.text = "Click to Examine";
             }
         }
         else if (!examining && popup.text == "Click to Examine")
         {
-            popup.text = "";
+            bools[index] = false;
+            if (!bools.Contains(true))
+                popup.text = "";
         }
     }
 
@@ -88,6 +98,7 @@ public class Examine : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1) && examining)
         {
+            bools[index] = false;
             popup.text = "";
             examining = uiManager.ToggleExamine();
             targObj.transform.position = origPos;
