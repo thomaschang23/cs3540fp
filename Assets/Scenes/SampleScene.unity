@@ -4452,7 +4452,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 
 --- !u!222 &202325835
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28368,7 +28368,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2
+  m_Text: 
 --- !u!222 &830204879
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37767,10 +37767,7 @@ MonoBehaviour:
   days:
   - {fileID: 1739117572}
   - {fileID: 1273069421}
-  startPanel: {r: 0, g: 0, b: 0, a: 0}
-  startText: {r: 1, g: 1, b: 1, a: 0}
-  endPanel: {r: 0, g: 0, b: 0, a: 1}
-  endText: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
+  fadeSpeed: 0.2
 --- !u!114 &1235257035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37784,7 +37781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -38606,7 +38603,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 3
+  m_Text: 
 --- !u!222 &1277384645
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -41973,7 +41970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -41993,7 +41990,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1493840517
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -54054,7 +54051,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8483205476731406653}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 77.1465, y: -0.7806742, z: 14.446627}
+  m_LocalPosition: {x: 77.1465, y: -1.61, z: 14.446627}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7608753495814731997}

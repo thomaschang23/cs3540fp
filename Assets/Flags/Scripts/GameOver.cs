@@ -6,15 +6,10 @@ using UnityEngine.UI;
 public class GameOver : MonoBehaviour
 {
     public List<GameObject> days;
-    bool gameOver = false;
-    Text continued;
-    public Color startPanel;
-    public Color startText;
-    public Color endPanel;
-    public Color endText;
+    public float fadeSpeed = 0.2f;
 
-    float t = 0;
-
+    private bool gameOver = false;
+    private Text continued;
     private int currentDay = 0;
     private bool dayEnded = false;
 
@@ -42,26 +37,54 @@ public class GameOver : MonoBehaviour
         gameOver = true;
         continued = GetComponentInChildren<Text>();
         continued.text = "Your accusation was not correct. You lose :(";
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if ((gameOver || dayEnded) && t < 4.5)
+        if ((gameOver || dayEnded) && GetComponent<Image>().color.a == 0)
         {
-            t = Mathf.PingPong(Time.time, 5);
-            GetComponent<Image>().color = Color.Lerp(startPanel, endPanel, t);
-            continued.color = Color.Lerp(startText, endText, t);
+            StartCoroutine(FadeUp());
         }
-        else if (dayEnded && t > 4.5)
+    }
+
+    private IEnumerator FadeUp()
+    {
+        Image orig;
+        Text text;
+        while ((orig = GetComponent<Image>()).color.a < 1)
+        {
+            orig.color = Faded(orig.color, 1);
+            text = GetComponentInChildren<Text>(); 
+            text.color = Faded(text.color, 1);
+            yield return null;
+        }
+        if (dayEnded)
         {
             dayEnded = false;
-            t = 0;
-            GetComponent<Image>().color = startPanel;
-            continued.color = startText;
             days[currentDay - 1].SetActive(false);
             days[currentDay].SetActive(true);
+            StartCoroutine(FadeDown());
         }
+    }
+
+    private IEnumerator FadeDown()
+    {
+        Image orig;
+        Text text = GetComponentInChildren<Text>();
+        while ((orig = GetComponent<Image>()).color.a > 0)
+        {
+            orig.color = Faded(orig.color, -1);
+            text = GetComponentInChildren<Text>(); 
+            text.color = Faded(text.color, -1);
+            yield return null;
+        }
+        orig.color = new Color(orig.color.r, orig.color.g, orig.color.b, 0);
+        text.color = new Color(text.color.r, text.color.g, text.color.b, 0);
+    }
+
+    private Color Faded(Color orig, int direction)
+    {
+        return new Color(orig.r, orig.g, orig.b, (orig.a + (direction * (fadeSpeed * Time.deltaTime))));
     }
 }
