@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // Note I used online aids in writing this code
 
@@ -17,8 +18,11 @@ public class Examine : MonoBehaviour
 
     bool examining;
 
+    Text popup;
+
     void Start()
     {
+        popup = GameObject.FindGameObjectWithTag("PopUpText").GetComponent<Text>();
         uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
         cam = Camera.main;
         examining = false;
@@ -34,16 +38,17 @@ public class Examine : MonoBehaviour
 
     void ExamineObj()
     {
-        if (Input.GetMouseButtonDown(0) && examining == false)
-        {
-            RaycastHit hit;
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out hit, 2) && hit.transform.gameObject == this.gameObject)
+        if (Physics.Raycast(ray, out hit, 2) && hit.transform.gameObject == this.gameObject)
+        {
+            if (Input.GetMouseButtonDown(0) && examining == false)
             {
                 examining = uiManager.ToggleExamine();
                 if (examining)
                 {
+                    popup.text = "Right Click to Exit";
                     targObj = hit.transform.gameObject;
 
                     origPos = targObj.transform.position;
@@ -54,6 +59,14 @@ public class Examine : MonoBehaviour
                     Time.timeScale = 0;
                 }
             }
+            else if (examining == false)
+            {
+                popup.text = "Click to Examine";
+            }
+        }
+        else if (!examining && popup.text == "Click to Examine")
+        {
+            popup.text = "";
         }
     }
 
@@ -75,6 +88,7 @@ public class Examine : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1) && examining)
         {
+            popup.text = "";
             examining = uiManager.ToggleExamine();
             targObj.transform.position = origPos;
             targObj.transform.eulerAngles = origRot;
