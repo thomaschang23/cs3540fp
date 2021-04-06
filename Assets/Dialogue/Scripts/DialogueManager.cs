@@ -170,14 +170,13 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeSentence(Text view, string sentence)
     {
+        AudioSource.PlayClipAtPoint(textScroll, player.transform.position, 0.1f); // TODO: make a class of global variables and use static global variable player
         view.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
             view.text += letter;
             yield return new WaitForSeconds(letterWriteSpeed);
         }
-
-        AudioSource.PlayClipAtPoint(textScroll, player.transform.position, 0.1f); // TODO: make a class of global variables and use static global variable player
     }
 
     public static void TriggerDialogue(GameObject npc)
