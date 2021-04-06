@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Note I used online aids in writing this code
+
 public class Examine : MonoBehaviour
 {
 
@@ -11,10 +13,13 @@ public class Examine : MonoBehaviour
     Vector3 origPos;
     Vector3 origRot;
 
+    private UIManager uiManager;
+
     bool examining;
 
     void Start()
     {
+        uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
         cam = Camera.main;
         examining = false;
     }
@@ -34,19 +39,20 @@ public class Examine : MonoBehaviour
             RaycastHit hit;
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out hit) && hit.transform.gameObject == this.gameObject)
+            if (Physics.Raycast(ray, out hit, 2) && hit.transform.gameObject == this.gameObject)
             {
-                PlayerMovement.mouseChange();
-                targObj = hit.transform.gameObject;
+                examining = uiManager.ToggleExamine();
+                if (examining)
+                {
+                    targObj = hit.transform.gameObject;
 
-                origPos = targObj.transform.position;
-                origRot = targObj.transform.rotation.eulerAngles;
+                    origPos = targObj.transform.position;
+                    origRot = targObj.transform.rotation.eulerAngles;
 
-                targObj.transform.position = cam.transform.position + (cam.transform.forward);
+                    targObj.transform.position = cam.transform.position + (cam.transform.forward);
 
-                Time.timeScale = 0;
-
-                examining = true;
+                    Time.timeScale = 0;
+                }
             }
         }
     }
@@ -69,7 +75,7 @@ public class Examine : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1) && examining)
         {
-            PlayerMovement.mouseChange();
+            examining = uiManager.ToggleExamine();
             targObj.transform.position = origPos;
             targObj.transform.eulerAngles = origRot;
 

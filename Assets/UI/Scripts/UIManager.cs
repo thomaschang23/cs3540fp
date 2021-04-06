@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
 
     private bool areNotesOpen = false;
     private bool isDialogueOpen = false;
+    private bool examining = false;
 
     public bool ToggleNotes()
     {
@@ -30,7 +31,7 @@ public class UIManager : MonoBehaviour
             areNotesOpen = false;
             notesAnimator.SetBool("IsOpen", false);
         }
-        else
+        else if (!examining)
         {
             notesIcon.color = notesIconActive;
             notesIconBkgd.color = notesIconBkgdActive;
@@ -40,6 +41,16 @@ public class UIManager : MonoBehaviour
         }
         ToggleMouseUnlock();
         return areNotesOpen;
+    }
+
+    public bool ToggleExamine()
+    {
+        if (examining || !areNotesOpen)
+        {
+            examining = !examining;
+        }
+        ToggleMouseUnlock();
+        return examining;
     }
 
     public bool ToggleDialogue()
@@ -60,7 +71,7 @@ public class UIManager : MonoBehaviour
 
     private void ToggleMouseUnlock()
     {
-        if (areNotesOpen || isDialogueOpen)
+        if (areNotesOpen || isDialogueOpen || examining)
         {
             PlayerMovement.mouseChange(-1);
         }
