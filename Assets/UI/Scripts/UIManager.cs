@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -21,6 +22,76 @@ public class UIManager : MonoBehaviour
     private bool isDialogueOpen = false;
     private bool examining = false;
 
+    public static bool isGamePaused = false;
+    public GameObject pauseMenu;
+
+    public GameObject notesCanvas;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isGamePaused)
+            {
+                ResumeGame();
+                if (areNotesOpen )
+                {
+                    notesCanvas.SetActive(true);
+                    ToggleNotes();
+                }
+                if (isDialogueOpen)
+                {
+                    notesCanvas.SetActive(true);
+                    ToggleDialogue();
+                }
+            }
+            else
+            {
+                if (areNotesOpen || isDialogueOpen)
+                {
+                    notesCanvas.SetActive(false);
+                }
+                PauseGame();
+            }
+        }
+    }
+
+    void PauseGame()
+    {
+        
+        isGamePaused = true;
+        ToggleMouseUnlock();
+        Time.timeScale = 0f;
+        pauseMenu.SetActive(true);
+
+        //Cursor.visible = true;
+        //Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void ResumeGame()
+    {
+        
+        isGamePaused = false;
+        ToggleMouseUnlock();
+        Time.timeScale = 1f;
+        pauseMenu.SetActive(false);
+
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
+        isGamePaused = false;
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
     public bool ToggleNotes()
     {
         if (areNotesOpen)
@@ -31,7 +102,7 @@ public class UIManager : MonoBehaviour
             areNotesOpen = false;
             notesAnimator.SetBool("IsOpen", false);
         }
-        else if (!examining)
+        else if (!examining && !isGamePaused)
         {
             notesIcon.color = notesIconActive;
             notesIconBkgd.color = notesIconBkgdActive;
@@ -45,7 +116,7 @@ public class UIManager : MonoBehaviour
 
     public bool ToggleExamine()
     {
-        if (examining || !areNotesOpen)
+        if ((examining || !areNotesOpen) && !isGamePaused) 
         {
             examining = !examining;
         }
@@ -54,13 +125,13 @@ public class UIManager : MonoBehaviour
     }
 
     public bool ToggleDialogue()
-    {
+    { 
         if (isDialogueOpen)
         {
             isDialogueOpen = false;
             dialogueAnimator.SetBool("IsOpen", false);
         }
-        else
+        else if (!isGamePaused)
         {
             isDialogueOpen = true;
             dialogueAnimator.SetBool("IsOpen", true);
@@ -71,12 +142,14 @@ public class UIManager : MonoBehaviour
 
     private void ToggleMouseUnlock()
     {
-        if (areNotesOpen || isDialogueOpen || examining)
+        if (areNotesOpen || isDialogueOpen || examining || isGamePaused )
         {
+            Debug.Log("OFF");
             PlayerMovement.mouseChange(-1);
         }
         else
         {
+            Debug.Log("ON");
             PlayerMovement.mouseChange(1);
         }
     }

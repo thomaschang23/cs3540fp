@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -31,8 +31,11 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]
     public bool canMove = true;
 
+    public Slider sens;
+
     void Start()
     {
+        sens.value = sensitivity;
         ui = FindObjectOfType<UIManager>();
         cc = GetComponent<CharacterController>();
         audioSource = GetComponent<AudioSource>();
@@ -120,6 +123,11 @@ public class PlayerMovement : MonoBehaviour
                 audioSource.Stop();
             }
         }
+    }
+
+    public void changeSens()
+    {
+        sensitivity = sens.value;
     }
 
     public static void mouseChange(int newState = 0)

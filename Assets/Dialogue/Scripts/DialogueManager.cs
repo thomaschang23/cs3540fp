@@ -45,6 +45,22 @@ public class DialogueManager : MonoBehaviour
         DisplayCurrentSentence();
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            DisplayNextSentence(0);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2) && button2.IsActive())
+        {
+            DisplayNextSentence(1);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3) && button3.IsActive())
+        {
+            DisplayNextSentence(2);
+        }
+    }
+
     public void DisplayNextSentence(int promptIdx)
     {
         if (tree.TryGetValue(currentNodeIdx, out DialogueNode node))
