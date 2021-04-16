@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
+    public static int currentDay = 0;
     public List<GameObject> days;
     public float fadeSpeed = 0.2f;
 
     private bool gameOver = false;
     private Text continued;
-    private int currentDay = 0;
     private bool dayEnded = false;
 
     public void nextDay()

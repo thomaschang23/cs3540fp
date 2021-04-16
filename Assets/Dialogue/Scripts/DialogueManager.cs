@@ -210,6 +210,11 @@ public class DialogueManager : MonoBehaviour
         dialogueHint.text = "";
     }
 
+    public void ShowObjectDialogueHint()
+	{
+        dialogueHint.text = "Click to interact.";
+    }
+
     public void EndDialogue()
     {
         currentTrigger.DialogueEnded();

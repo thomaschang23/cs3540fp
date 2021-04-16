@@ -6,6 +6,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public string defaultName;
     public Dialogue dialogue;
+    public bool lookAtPlayer = true;
 
     public void TriggerDialogue()
     {
@@ -20,7 +21,9 @@ public class DialogueTrigger : MonoBehaviour
             transform.position.y, 
             player.position.z
         );
-        transform.LookAt(target);
+        
+        if (lookAtPlayer)
+            transform.LookAt(target);
 
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue, defaultName, this);
     }

@@ -6,7 +6,7 @@ public class InteractableController : MonoBehaviour
 {
     public AudioClip doorSFX;
     public float interactableDistance = 3f;
-    public GameObject hand;
+    //public GameObject hand;
     public float smooth = 5;
 
     bool holding;
@@ -21,7 +21,7 @@ public class InteractableController : MonoBehaviour
         if (holding)
         {
             heldObject.transform.position = Vector3.Lerp(heldObject.transform.position,
-                hand.transform.position, Time.deltaTime * smooth);
+                Camera.main.transform.position + Camera.main.transform.forward, Time.deltaTime * smooth);
             
             if(Input.GetKeyDown(KeyCode.E))
 			{

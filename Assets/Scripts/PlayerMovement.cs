@@ -168,11 +168,23 @@ public class PlayerMovement : MonoBehaviour
             Ray ray = playerCam.ScreenPointToRay(Input.mousePosition);
             if (
               Physics.Raycast(ray, out hit, dialogueTriggerDistance)
-              && hit.collider.CompareTag("DialogueNPC")
             )
             {
-                npc = hit.collider.gameObject;
-                FindObjectOfType<DialogueManager>().ShowDialogueHint();
+                if (hit.collider.CompareTag("DialogueNPC"))
+				{
+                    npc = hit.collider.gameObject;
+                    FindObjectOfType<DialogueManager>().ShowDialogueHint();
+                }
+                // by tagging any object as "DialogueObject" and adding a DialogueTrigger script to the object,
+                // function calls can be made by interacting with objects.
+                // For example, this was done to the bed in Leslie's house. The player can click on the bed when close enough,
+                // bringing up a the text, "Get some rest?", with the prompts, "Yes" and "Not yet". The "Yes" option will
+                // call GameOver.NextDay().
+                else if (hit.collider.CompareTag("DialogueObject"))
+				{
+                    npc = hit.collider.gameObject;
+                    FindObjectOfType<DialogueManager>().ShowObjectDialogueHint();
+                }
             }
             else
             {
