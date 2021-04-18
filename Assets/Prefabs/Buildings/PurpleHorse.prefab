@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 2948303792753578174}
   - component: {fileID: 8003311292218911140}
   m_Layer: 0
-  m_Name: SM_Wep_American_Bayonet_01
+  m_Name: Bayonet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1274,7 +1274,7 @@ GameObject:
   - component: {fileID: 8003311292870374827}
   - component: {fileID: 8003311292640601605}
   m_Layer: 0
-  m_Name: PurpleHorse 2
+  m_Name: PurpleHorse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1706,7 +1706,7 @@ GameObject:
   - component: {fileID: 8066750640706701818}
   - component: {fileID: 8003311293190499382}
   m_Layer: 0
-  m_Name: SM_Prop_Bottle_01
+  m_Name: Bottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1988,7 +1988,7 @@ GameObject:
   - component: {fileID: 8067144802812288383}
   - component: {fileID: 8003311292805870141}
   m_Layer: 0
-  m_Name: SM_Prop_Barrel_Half_01 (1)
+  m_Name: Barrel half
   m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2101,7 +2101,7 @@ GameObject:
   - component: {fileID: 8067144803096820828}
   - component: {fileID: 8003311292478384699}
   m_Layer: 0
-  m_Name: SM_Prop_Barrel_Half_01 (2)
+  m_Name: Barrel half
   m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2426,7 +2426,7 @@ GameObject:
   - component: {fileID: 8003311292549593861}
   - component: {fileID: 8003311292719376240}
   m_Layer: 0
-  m_Name: SM_Prop_GoldBar_01
+  m_Name: Gold bar
   m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2551,7 +2551,7 @@ GameObject:
   - component: {fileID: 8067123925819784405}
   - component: {fileID: 8003311292174045945}
   m_Layer: 0
-  m_Name: SM_Prop_GoldBar_01 (1)
+  m_Name: Gold bar
   m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2664,7 +2664,7 @@ GameObject:
   - component: {fileID: 8067123927471558693}
   - component: {fileID: 8003311293813358089}
   m_Layer: 0
-  m_Name: SM_Prop_GoldBar_01 (2)
+  m_Name: Gold bar
   m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2779,7 +2779,7 @@ GameObject:
   - component: {fileID: 8003311294228671002}
   - component: {fileID: 8003311292577815077}
   m_Layer: 0
-  m_Name: SM_Prop_Cup_02 (2)
+  m_Name: Cup
   m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2925,7 +2925,7 @@ GameObject:
   - component: {fileID: 8003311294121458304}
   - component: {fileID: 8003311293800753077}
   m_Layer: 0
-  m_Name: SM_Prop_Cup_02 (1)
+  m_Name: Cup
   m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3071,7 +3071,7 @@ GameObject:
   - component: {fileID: 8003311293963419284}
   - component: {fileID: 8003311294113462488}
   m_Layer: 0
-  m_Name: SM_Prop_Cup_02
+  m_Name: Cup
   m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3216,7 +3216,7 @@ GameObject:
   - component: {fileID: 8003311292417293007}
   - component: {fileID: 8003311293789840664}
   m_Layer: 0
-  m_Name: SM_Prop_Bottle_04
+  m_Name: Bottle
   m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

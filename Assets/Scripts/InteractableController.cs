@@ -13,11 +13,13 @@ public class InteractableController : MonoBehaviour
     private bool holding;
     private GameObject heldObject;
     private KeyCode interactKey = KeyCode.E;
-    private Text popup;
+    private Text pickUpText;
+    private Text doorText;
 
     private void Start()
 	{
-        popup = GameObject.FindGameObjectWithTag("PopUpText").GetComponent<Text>();
+        pickUpText = GameObject.FindGameObjectWithTag("PickUpPopUpText").GetComponent<Text>();
+        doorText = GameObject.FindGameObjectWithTag("DoorPopUpText").GetComponent<Text>();
     }
 
 	void Update()
@@ -26,10 +28,10 @@ public class InteractableController : MonoBehaviour
      
         if (holding)
         {
-            heldObject.transform.position = Vector3.Lerp(heldObject.transform.position,
-                Camera.main.transform.position + Camera.main.transform.forward * 1.25f, Time.deltaTime * smooth);
-
-            popup.text = "E to drop";
+            heldObject.transform.position = //Vector3.Lerp(heldObject.transform.position,
+                //Camera.main.transform.position + Camera.main.transform.forward * 1.2f, Time.deltaTime * smooth);
+                Camera.main.transform.position + Camera.main.transform.forward * 1.2f;
+            pickUpText.text = "E to drop " + heldObject.name;
             if(Input.GetKeyDown(interactKey))
 			{
                 holding = false;
@@ -43,7 +45,7 @@ public class InteractableController : MonoBehaviour
             {
                 if (hit.collider.CompareTag("Pickup"))
                 {
-                    popup.text = "E to pickup";
+                    pickUpText.text = "E to pickup " + hit.collider.name;
                     if (Input.GetKeyDown(interactKey))
 					{
                         holding = true;
@@ -51,12 +53,15 @@ public class InteractableController : MonoBehaviour
                         heldObject.GetComponent<Rigidbody>().isKinematic = true;
                     }
                 }
-
+                else
+                {
+                    pickUpText.text = "";
+                }
             }
             else
-			{
-                popup.text = "";
-			}
+            {
+                pickUpText.text = "";
+            }
         }
 
 
@@ -64,7 +69,7 @@ public class InteractableController : MonoBehaviour
         {
             if (hit.collider.CompareTag("Door"))
             {
-                popup.text = "E to interact";
+                doorText.text = "E to interact";
                 if (Input.GetKeyDown(interactKey))
                 {
                     GameObject door = hit.collider.gameObject;
@@ -75,9 +80,12 @@ public class InteractableController : MonoBehaviour
             }
             else
 			{
-                popup.text = "";
+                doorText.text = "";
             }
-
+        }
+        else
+        {
+            doorText.text = "";
         }
     }
 }
