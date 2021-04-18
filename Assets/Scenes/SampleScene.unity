@@ -30135,14 +30135,14 @@ Transform:
   - {fileID: 2101828588}
   - {fileID: 59328355}
   - {fileID: 157214765}
+  - {fileID: 1382045285}
   - {fileID: 1718323875}
   - {fileID: 388498757}
   - {fileID: 1779458211}
   - {fileID: 672866622}
   - {fileID: 1436606204}
-  - {fileID: 1235864619}
-  - {fileID: 1382045285}
   - {fileID: 1969298737}
+  - {fileID: 1235864619}
   - {fileID: 1565778875}
   - {fileID: 802092977}
   - {fileID: 1059598367}
@@ -30692,11 +30692,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 87247388db4e0464b9f82aed9ff81022, type: 3}
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 3
+    m_MinSize: 1
     m_MaxSize: 178
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -32696,7 +32696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorSFX: {fileID: 8300000, guid: 3804c512d7cd4c74291e2a57c43eda49, type: 3}
-  interactableDistance: 3
+  interactableDistance: 2
   smooth: 5
 --- !u!82 &963194230
 AudioSource:
@@ -59567,6 +59567,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8003311292640601605, guid: 2f685ae02d4917846a3d55bc26aabebd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8003311292870374826, guid: 2f685ae02d4917846a3d55bc26aabebd, type: 3}
       propertyPath: m_Name
       value: PurpleHorse
