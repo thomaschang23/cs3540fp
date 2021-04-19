@@ -19,7 +19,7 @@ public class InteractableController : MonoBehaviour
     private void Start()
 	{
         pickUpText = GameObject.FindGameObjectWithTag("PickUpPopUpText").GetComponent<Text>();
-        doorText = GameObject.FindGameObjectWithTag("DoorPopUpText").GetComponent<Text>();
+        doorText = GameObject.FindGameObjectWithTag("DoorPopUpText")?.GetComponent<Text>();
     }
 
 	void Update()
@@ -69,7 +69,8 @@ public class InteractableController : MonoBehaviour
         {
             if (hit.collider.CompareTag("Door"))
             {
-                doorText.text = "E to interact";
+                if (doorText != null)
+                    doorText.text = "E to interact";
                 if (Input.GetKeyDown(interactKey))
                 {
                     GameObject door = hit.collider.gameObject;
@@ -80,12 +81,14 @@ public class InteractableController : MonoBehaviour
             }
             else
 			{
-                doorText.text = "";
+                if (doorText != null)
+                    doorText.text = "";
             }
         }
         else
         {
-            doorText.text = "";
+            if (doorText != null)
+                doorText.text = "";
         }
     }
 }
