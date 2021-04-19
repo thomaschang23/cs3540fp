@@ -735,7 +735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 411896, guid: a680ac69aa15dce4ca3d34bc515f671d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.820242
+      value: 30.14
       objectReference: {fileID: 0}
     - target: {fileID: 411896, guid: a680ac69aa15dce4ca3d34bc515f671d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -743,11 +743,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 411896, guid: a680ac69aa15dce4ca3d34bc515f671d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.5677137
+      value: -2.25
       objectReference: {fileID: 0}
     - target: {fileID: 411896, guid: a680ac69aa15dce4ca3d34bc515f671d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.38268325
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 411896, guid: a680ac69aa15dce4ca3d34bc515f671d, type: 3}
       propertyPath: m_LocalRotation.x
@@ -755,11 +755,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 411896, guid: a680ac69aa15dce4ca3d34bc515f671d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9238796
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 411896, guid: a680ac69aa15dce4ca3d34bc515f671d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 411896, guid: a680ac69aa15dce4ca3d34bc515f671d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -767,7 +767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 411896, guid: a680ac69aa15dce4ca3d34bc515f671d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 225
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 411896, guid: a680ac69aa15dce4ca3d34bc515f671d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -38311,11 +38311,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._keys.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._keys.Array.data[0]
@@ -38363,7 +38363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._keyValues.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._keyValues.Array.data[0]
@@ -38419,7 +38419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.data[2].text
-      value: The deliveries are blocking the door. Stacey and I'll get that sorted
+      value: The deliveries are blocking the door. Stacey and I'll get that sorted 
         later. You should get some rest, ma'am. Take the back door.
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
@@ -38429,8 +38429,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.data[4].text
-      value: You're welcome, ma'am. In times like these, it's my job to keep this
-        place runnin'. Now, go head on home.
+      value: Oh! One more thing. If you forget anything, press the Esc key to see
+        controller information. If you forget what you're doing, press J to open
+        your notebook.
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.data[5].text
@@ -38473,6 +38474,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.data[2].flagId
+      value: tutorialObjective
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[3].flagId
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
@@ -38481,6 +38486,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.data[7].flagId
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[2].flagNote
+      value: Go home and get some rest.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[3].flagNote
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
@@ -38533,7 +38546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.data[3].prompts.Array.data[0].text
-      value: (End.)
+      value: (Continue.)
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.data[3].prompts.Array.data[1].text
@@ -38586,7 +38599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.data[2].prompts.Array.data[0].nextNodeId
-      value: -1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.data[2].prompts.Array.data[1].nextNodeId
@@ -38594,7 +38607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.data[3].prompts.Array.data[0].nextNodeId
-      value: -1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.data[3].prompts.Array.data[1].nextNodeId
@@ -46553,7 +46566,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1251973762
 Transform:
   m_ObjectHideFlags: 0
@@ -51754,7 +51767,8 @@ MonoBehaviour:
         nextNodeId: 6
     - name: 
       flagId: cactusTalk
-      flagNote: 
+      flagNote: '"The killer is one who serves the townspeople and handles numerous
+        exchanges. This person is closer to you than you think." -weird cactus'
       text: The killer is one who serves the townspeople and handles numerous exchanges.
         This person is closer to you than you think. Be careful, human. Farewell!
       prompts:
@@ -56193,7 +56207,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1739117573
 Transform:
   m_ObjectHideFlags: 0
