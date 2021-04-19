@@ -144,12 +144,12 @@ public class UIManager : MonoBehaviour
     {
         if (areNotesOpen || isDialogueOpen || examining || isGamePaused )
         {
-            Debug.Log("OFF");
+            //Debug.Log("OFF");
             PlayerMovement.mouseChange(-1);
         }
         else
         {
-            Debug.Log("ON");
+            //Debug.Log("ON");
             PlayerMovement.mouseChange(1);
         }
     }
