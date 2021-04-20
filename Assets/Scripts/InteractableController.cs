@@ -58,7 +58,7 @@ public class InteractableController : MonoBehaviour
                     pickUpText.text = "";
                 }
             }
-            else
+            else if (pickUpText.text != "Click to Examine")
             {
                 pickUpText.text = "";
             }

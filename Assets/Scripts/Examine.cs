@@ -27,6 +27,7 @@ public class Examine : MonoBehaviour
     {
         bools.Add(false);
         index = bools.Count - 1;
+        //Debug.Log(index);
         popup = GameObject.FindGameObjectWithTag("PopUpText").GetComponent<Text>();
         uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
         cam = Camera.main;
