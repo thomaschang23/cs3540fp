@@ -34,7 +34,7 @@ public class UIManager : MonoBehaviour
             if (isGamePaused)
             {
                 ResumeGame();
-                if (areNotesOpen )
+                    if (areNotesOpen )
                 {
                     notesCanvas.SetActive(true);
                     ToggleNotes();
