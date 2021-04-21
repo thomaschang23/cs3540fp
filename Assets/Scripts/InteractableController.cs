@@ -22,18 +22,19 @@ public class InteractableController : MonoBehaviour
         doorText = GameObject.FindGameObjectWithTag("DoorPopUpText")?.GetComponent<Text>();
     }
 
-	void Update()
+	void FixedUpdate()
     {
         RaycastHit hit;
      
         if (holding)
         {
-            heldObject.transform.position = //Vector3.Lerp(heldObject.transform.position,
-                //Camera.main.transform.position + Camera.main.transform.forward * 1.2f, Time.deltaTime * smooth);
-                Camera.main.transform.position + Camera.main.transform.forward * 1.2f;
+            heldObject.transform.position = Vector3.Lerp(heldObject.transform.position,
+                Camera.main.transform.position + Camera.main.transform.forward * 1.2f, Time.deltaTime * smooth);
+                //Camera.main.transform.position + Camera.main.transform.forward * 1.2f;
             pickUpText.text = "E to drop " + heldObject.name;
             if(Input.GetKeyDown(interactKey))
 			{
+                Debug.Log("drop");
                 holding = false;
                 heldObject.GetComponent<Rigidbody>().isKinematic = false;
                 heldObject = null;
@@ -47,7 +48,8 @@ public class InteractableController : MonoBehaviour
                 {
                     pickUpText.text = "E to pickup " + hit.collider.name;
                     if (Input.GetKeyDown(interactKey))
-					{
+                    {
+                        Debug.Log("pickup");
                         holding = true;
                         heldObject = hit.collider.gameObject;
                         heldObject.GetComponent<Rigidbody>().isKinematic = true;
@@ -58,7 +60,7 @@ public class InteractableController : MonoBehaviour
                     pickUpText.text = "";
                 }
             }
-            else if (pickUpText.text != "Click to Examine")
+            else //if (pickUpText.text != "Click to Examine")
             {
                 pickUpText.text = "";
             }
@@ -80,7 +82,7 @@ public class InteractableController : MonoBehaviour
                 }
             }
             else
-			{
+            {
                 if (doorText != null)
                     doorText.text = "";
             }
