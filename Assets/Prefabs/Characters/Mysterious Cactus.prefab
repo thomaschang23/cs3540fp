@@ -1,0 +1,243 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &864446572747240984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 861909962063413804}
+  - component: {fileID: 829164890060024938}
+  - component: {fileID: 840909642329354948}
+  - component: {fileID: 862884187011703407}
+  - component: {fileID: 862884187011703312}
+  m_Layer: 0
+  m_Name: Mysterious Cactus
+  m_TagString: DialogueObject
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &861909962063413804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864446572747240984}
+  m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
+  m_LocalPosition: {x: 41.614357, y: 1.638, z: -47.083702}
+  m_LocalScale: {x: 1, y: 0.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!33 &829164890060024938
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864446572747240984}
+  m_Mesh: {fileID: 4300000, guid: 1f9bf072818b6294e8989017e96d97bd, type: 3}
+--- !u!23 &840909642329354948
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864446572747240984}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 66a8a6e30880caa48908020cf5388217, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &862884187011703407
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864446572747240984}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48184776, y: 2.5954895, z: 1.262867}
+  m_Center: {x: 0.025740623, y: 1.2977448, z: -0.035993576}
+--- !u!114 &862884187011703312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864446572747240984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 212690231179c8444bc496e60965d2ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultName: Mysterious voice
+  dialogue:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 1
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 1
+    _keyValues: 00000000010000000200000003000000040000000500000006000000
+    _keys: 00000000010000000200000003000000040000000500000006000000
+    _values:
+    - name: 
+      flagId: 
+      flagNote: 
+      text: Hey, you!
+      prompts:
+      - text: You're the talking cactus?
+        dependant: weirdCactusRumor
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 1
+      - text: 'Huh? '
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: -1
+    - name: 
+      flagId: 
+      flagNote: 
+      text: You found me!
+      prompts:
+      - text: Why am I talking to a cactus...
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 2
+      - text: (Leave.)
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: -1
+    - name: 
+      flagId: 
+      flagNote: 
+      text: I'm not a mere cactus! I'm the protector of the desert.
+      prompts:
+      - text: You're clearly a cactus.
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 3
+      - text: Begone! (Leave.)
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: -1
+    - name: 
+      flagId: 
+      flagNote: 
+      text: Yes, I admit my current form is a cactus, and a wee one at that. Our
+        powers are proportional to the zeal of our believers, after all. Are you
+        a believer?
+      prompts:
+      - text: Yes.
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 4
+      - text: No. (Leave.)
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: -1
+    - name: 
+      flagId: 
+      flagNote: 
+      text: Thank you, human! I'll reward you. What do you desire?
+      prompts:
+      - text: Who killed Avery?
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 5
+    - name: 
+      flagId: 
+      flagNote: 
+      text: 'I see. You desire justice. Very well, I''ll tell you. '
+      prompts:
+      - text: (Continue.)
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: 6
+    - name: 
+      flagId: cactusTalk
+      flagNote: '"The killer is one who serves the townspeople and handles numerous
+        exchanges. This person is closer to you than you think." -weird cactus'
+      text: The killer is one who serves the townspeople and handles numerous exchanges.
+        This person is closer to you than you think. Be careful, human. Farewell!
+      prompts:
+      - text: (End.)
+        dependant: 
+        e:
+          m_PersistentCalls:
+            m_Calls: []
+        nextNodeId: -1
+  lookAtPlayer: 0
