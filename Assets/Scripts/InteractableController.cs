@@ -22,15 +22,15 @@ public class InteractableController : MonoBehaviour
         doorText = GameObject.FindGameObjectWithTag("DoorPopUpText")?.GetComponent<Text>();
     }
 
-	void FixedUpdate()
+	void Update()
     {
         RaycastHit hit;
      
         if (holding)
         {
-            heldObject.transform.position = Vector3.Lerp(heldObject.transform.position,
-                Camera.main.transform.position + Camera.main.transform.forward * 1.2f, Time.deltaTime * smooth);
-                //Camera.main.transform.position + Camera.main.transform.forward * 1.2f;
+            heldObject.transform.position = //Vector3.Lerp(heldObject.transform.position,
+                //Camera.main.transform.position + Camera.main.transform.forward * 1.2f, Time.deltaTime * smooth);
+                Camera.main.transform.position + Camera.main.transform.forward * 1.2f;
             pickUpText.text = "E to drop " + heldObject.name;
             if(Input.GetKeyDown(interactKey))
 			{
