@@ -10878,7 +10878,7 @@ MonoBehaviour:
   button2: {fileID: 61996705}
   button3: {fileID: 1637258434}
   textScroll: {fileID: 8300000, guid: b8e035ee314749146acacf55183a1968, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 1566584835}
 --- !u!114 &342212739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10893,7 +10893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pageView: {fileID: 2047452583}
   noteToggle: {fileID: 8300000, guid: a54b3cfd33f79f94e9642c6eb5741ca1, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 1566584835}
 --- !u!4 &342212740
 Transform:
   m_ObjectHideFlags: 0
@@ -21920,7 +21920,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1566584836}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: changeSens
         m_Mode: 1
@@ -30260,7 +30260,7 @@ PrefabInstance:
     - target: {fileID: 4715161936853501072, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1566584835}
     - target: {fileID: 4715161936853501072, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: wanderPoints.Array.data[0]
       value: 
@@ -30910,7 +30910,7 @@ PrefabInstance:
     - target: {fileID: 4715161936853501072, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1566584835}
     - target: {fileID: 4715161936853501072, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: wanderPoints.Array.data[0]
       value: 
@@ -57894,7 +57894,7 @@ MonoBehaviour:
   gravity: 20
   playerCam: {fileID: 1377910515}
   sensitivity: 2
-  vertLookLimit: 45
+  vertLookLimit: 60
   dialogueTriggerDistance: 2
   canMove: 1
   sens: {fileID: 556264283}
