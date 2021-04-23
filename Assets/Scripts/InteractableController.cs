@@ -23,12 +23,15 @@ public class InteractableController : MonoBehaviour
     private Vector3 origPosition;
     private Vector3 origRotation;
 
+    private Text noteAddedText;
+
     private void Start()
 	{
         pickUpText = GameObject.FindGameObjectWithTag("PickUpPopUpText").GetComponent<Text>();
         doorText = GameObject.FindGameObjectWithTag("DoorPopUpText").GetComponent<Text>();
         examineText = GameObject.FindGameObjectWithTag("ExaminePopUpText").GetComponent<Text>();
         ui = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+        noteAddedText = GameObject.FindGameObjectWithTag("NoteAddedText").GetComponent<Text>();
     }
 
 	void Update()
@@ -76,7 +79,7 @@ public class InteractableController : MonoBehaviour
                 float rotSpeed = 15;
 
                 float xAxis = Input.GetAxis("Mouse X") * rotSpeed;
-                float yAxis = Input.GetAxis("Mouse Y") * rotSpeed;
+                float yAxis = Input.GetAxis("Mouse Y") * -rotSpeed;
 
                 examineObject.transform.Rotate(Vector3.up, -xAxis, Space.World);
                 examineObject.transform.Rotate(Vector3.right, yAxis, Space.World);
@@ -111,6 +114,18 @@ public class InteractableController : MonoBehaviour
                         examineObject.transform.position = gameObject.transform.position + (gameObject.transform.forward);
 
                         Time.timeScale = 0;
+
+                        ExamineFlag examineFlag = hit.transform.GetComponent<ExamineFlag>();
+                        if (!examineFlag.flagId.Equals(""))
+						{
+                            FlagManager.SetFlag(examineFlag.flagId, examineFlag.flagNote);
+
+                            if (!examineFlag.flagNote.Equals(""))
+                            {
+                                noteAddedText.enabled = true;
+                                Invoke("DisableNoteAddedText", 5f);
+                            }
+                        }
                     }
                 }
             }
@@ -121,6 +136,11 @@ public class InteractableController : MonoBehaviour
             }
         }
     }
+
+    private void DisableNoteAddedText()
+	{
+        noteAddedText.enabled = false;
+	}
 
     private void updatePickup()
 	{

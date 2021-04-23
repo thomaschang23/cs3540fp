@@ -25,12 +25,14 @@ public class DialogueManager : MonoBehaviour
     private int currentNodeIdx;
     private string currentDefaultName;
     private DialogueTrigger currentTrigger;
+    private Text noteAddedText;
 
     DialoguePrompt[] availablePrompts;
 
     private void Start()
     {
         uiManager = GetComponent<UIManager>();
+        noteAddedText = GameObject.FindGameObjectWithTag("NoteAddedText").GetComponent<Text>();
     }
 
     public void StartDialogue(Dialogue dialogue, string defaultName, DialogueTrigger trigger)
@@ -176,12 +178,26 @@ public class DialogueManager : MonoBehaviour
             StartCoroutine(TypeSentence(dialogueView, node.text));
 
             if (!node.flagId.Equals(""))
+			{
                 FlagManager.SetFlag(node.flagId, node.flagNote);
+
+                if (!node.flagNote.Equals(""))
+				{
+                    noteAddedText.enabled = true;
+                    Invoke("DisableNoteAddedText", 5f);
+                }
+            }
         }
         else
         {
             EndDialogue();
         }
+    }
+
+    // TODO: Dupe method in InteractableController
+    private void DisableNoteAddedText()
+    {
+        noteAddedText.enabled = false;
     }
 
     IEnumerator TypeSentence(Text view, string sentence)
