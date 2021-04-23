@@ -19,53 +19,18 @@ public class InteractableController : MonoBehaviour
     private void Start()
 	{
         pickUpText = GameObject.FindGameObjectWithTag("PickUpPopUpText").GetComponent<Text>();
-        doorText = GameObject.FindGameObjectWithTag("DoorPopUpText")?.GetComponent<Text>();
+        doorText = GameObject.FindGameObjectWithTag("DoorPopUpText").GetComponent<Text>();
     }
 
 	void Update()
     {
-        RaycastHit hit;
-     
-        if (holding)
-        {
-            heldObject.transform.position = //Vector3.Lerp(heldObject.transform.position,
-                //Camera.main.transform.position + Camera.main.transform.forward * 1.2f, Time.deltaTime * smooth);
-                Camera.main.transform.position + Camera.main.transform.forward * 1.2f;
-            pickUpText.text = "E to drop " + heldObject.name;
-            if(Input.GetKeyDown(interactKey))
-			{
-                Debug.Log("drop");
-                holding = false;
-                heldObject.GetComponent<Rigidbody>().isKinematic = false;
-                heldObject = null;
-            }
-        }
-        else
-        {
-            if (Physics.Raycast(transform.position, transform.forward, out hit, interactableDistance))
-            {
-                if (hit.collider.CompareTag("Pickup"))
-                {
-                    pickUpText.text = "E to pickup " + hit.collider.name;
-                    if (Input.GetKeyDown(interactKey))
-                    {
-                        Debug.Log("pickup");
-                        holding = true;
-                        heldObject = hit.collider.gameObject;
-                        heldObject.GetComponent<Rigidbody>().isKinematic = true;
-                    }
-                }
-                else
-                {
-                    pickUpText.text = "";
-                }
-            }
-            else //if (pickUpText.text != "Click to Examine")
-            {
-                pickUpText.text = "";
-            }
-        }
+        updatePickup();
+        updateDoor();
+    }
 
+    private void updateDoor()
+	{
+        RaycastHit hit;
 
         if (Physics.Raycast(transform.position, transform.forward, out hit, interactableDistance))
         {
@@ -81,16 +46,50 @@ public class InteractableController : MonoBehaviour
                     AudioSource.PlayClipAtPoint(doorSFX, door.transform.position);
                 }
             }
-            else
-            {
-                if (doorText != null)
-                    doorText.text = "";
-            }
         }
         else
         {
             if (doorText != null)
                 doorText.text = "";
+        }
+    }
+
+    private void updatePickup()
+	{
+        RaycastHit hit;
+
+        if (holding)
+        {
+            heldObject.transform.position = //Vector3.Lerp(heldObject.transform.position,
+                                            //Camera.main.transform.position + Camera.main.transform.forward * 1.2f, Time.deltaTime * smooth);
+                Camera.main.transform.position + Camera.main.transform.forward * 1.5f;
+            pickUpText.text = "E to drop " + heldObject.name;
+            if (Input.GetKeyDown(interactKey))
+            {
+                holding = false;
+                heldObject.GetComponent<Rigidbody>().isKinematic = false;
+                heldObject = null;
+            }
+        }
+        else
+        {
+            if (Physics.Raycast(transform.position, transform.forward, out hit, interactableDistance))
+            {
+                if (hit.collider.CompareTag("Pickup"))
+                {
+                    pickUpText.text = "E to pickup " + hit.collider.name;
+                    if (Input.GetKeyDown(interactKey))
+                    {
+                        holding = true;
+                        heldObject = hit.collider.gameObject;
+                        heldObject.GetComponent<Rigidbody>().isKinematic = true;
+                    }
+                }
+            }
+            else
+            {
+                pickUpText.text = "";
+            }
         }
     }
 }

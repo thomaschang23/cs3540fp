@@ -8,7 +8,12 @@ TagManager:
   - Door
   - Pickup
   - UIManager
-  - PopUpText
+  - DoorPopUpText
+  - PickUpPopUpText
+  - DialogueObject
+  - Cine
+  - ExaminePopUpText
+  - Examine
   layers:
   - Default
   - TransparentFX
