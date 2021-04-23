@@ -43067,7 +43067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457395337348762, guid: 0a3c712afb30af7439c380abd17a6681, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Examine
       objectReference: {fileID: 0}
     - target: {fileID: 4606470396650394, guid: 0a3c712afb30af7439c380abd17a6681, type: 3}
       propertyPath: m_RootOrder
@@ -43137,18 +43137,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1457395337348762, guid: 0a3c712afb30af7439c380abd17a6681, type: 3}
   m_PrefabInstance: {fileID: 1136661498}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1136661501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136661500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 759bf936a65c92846bc3bcf8c0135491, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1136661502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57888,8 +57876,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f9dba9c08b804409ccee63f67c4036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wSpeed: 4
-  rSpeed: 10
+  wSpeed: 5
+  rSpeed: 7.5
   jSpeed: 5
   gravity: 20
   playerCam: {fileID: 1377910515}
