@@ -64,8 +64,9 @@ public class GameOver : MonoBehaviour
             dayEnded = false;
             days[currentDay - 1].SetActive(false);
             days[currentDay].SetActive(true);
-            StartCoroutine(FadeDown());
         }
+        StartCoroutine(FadeDown());
+
     }
 
     private IEnumerator FadeDown()
