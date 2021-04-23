@@ -20,8 +20,8 @@ public class InteractableController : MonoBehaviour
     private GameObject examineObject;
     private bool examining;
     private UIManager ui;
-    Vector3 origPosition;
-    Vector3 origRotation;
+    private Vector3 origPosition;
+    private Vector3 origRotation;
 
     private void Start()
 	{
@@ -70,6 +70,7 @@ public class InteractableController : MonoBehaviour
 
         if (examining)
         {
+            examineText.text = "Left click and drag to rotate. Right click to Exit";
             if (Input.GetMouseButton(0))
             {
                 float rotSpeed = 15;
@@ -99,10 +100,9 @@ public class InteractableController : MonoBehaviour
                 if (hit.collider.CompareTag("Examine"))
                 {
                     examineText.text = "Click to Examine";
-                    if (Input.GetMouseButtonDown(0))
+                    if (Input.GetMouseButton(0))
                     {
                         examining = ui.ToggleExamine();
-                        examineText.text = "Right Click to Exit";
                         examineObject = hit.transform.gameObject;
 
                         origPosition = examineObject.transform.position;
