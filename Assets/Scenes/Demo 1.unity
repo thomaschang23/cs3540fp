@@ -30978,23 +30978,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._keys.Array.size
-      value: 7
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._keys.Array.data[7]
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._keys.Array.data[8]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._keys.Array.data[9]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._keys.Array.data[10]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._keys.Array.data[11]
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._keys.Array.data[12]
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._keyValues.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[7]
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[8]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[9]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[10]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[11]
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[12]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[0].text
-      value: "\u201CHey Rosannah, what is the matter?\u201D"
+      value: "Hey Leslie, how are you holdin\u2019 up? I just decided to take some
+        time to myself at the diner, haha."
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[1].text
-      value: " \u201CO-Oh, umm, why you ask that?\u201D"
+      value: "Ah, so now you understand why I\u2019m so suspicious of Bernie."
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[2].name
@@ -31002,8 +31051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[2].text
-      value: "\u201CAh, well ya see, I didn\u2019t tell too many people, that\u2019s
-        all.\u201D"
+      value: And you said it was Russell who talked to you about it?
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[3].name
@@ -31011,8 +31059,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[3].text
-      value: "\u201CMe and Dick are close, but he\u2019s not my keeper or anything,
-        haha\u2026\u201D"
+      value: "Well, I notice that he isn\u2019t around here loitering- for once.
+        I wanted to let you know about something that I think might be interesting."
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[4].name
@@ -31020,7 +31068,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[4].text
-      value: "\u201CNo worries!\u201D"
+      value: "Yep. I figure that Avery didn\u2019t tell you about this because they
+        knew it would make you upset, but Avery and Russell had a little scuffle
+        a couple years ago."
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[5].name
@@ -31028,9 +31078,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[5].text
-      value: "\u201COkay... can I just be honest with you? I needed a minute to myself,
-        ya hear? A woman can only take so much. I just wanted some time where no
-        one is bothering me.\u201D"
+      value: "Me and Avery were just talking on the phone about a week ago, chatting
+        about people in the town like we usually do, and he started to talk about
+        how it was \u201Cprobably safe\u201D to talk about something concerning Russell
+        because it had been nearly 4 years since it happened."
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[6].name
@@ -31038,7 +31089,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[6].text
-      value: "\u201CDon\u2019t you tell anyone though, Leslie. Okay?\u201D"
+      value: Apparently, when Avery was initially talking about opening The Purple
+        House, Russel wanted to try to join on the venture with him.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[7].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[7].text
+      value: "But, as you can probably guess, that never happened, and it\u2019s
+        because Avery said no."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[8].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[8].text
+      value: Exactly! Even as a kid he had always been super independent. Anyways,
+        though, apparently Russel did not take the rejection well, and blamed it
+        on you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[9].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[9].text
+      value: "Yes, ma\u2019am. He was convinced that Avery said no because you already
+        were planning to be Avery\u2019s business partner."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[10].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[10].text
+      value: "I could only imagine how he felt when The Purple House ended up doing
+        so well. But it\u2019s all so silly because Avery did most of everything
+        at the diner all by himself, haha."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[11].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[11].text
+      value: "But yeah, that\u2019s all it was. Just a little piece of gossip for
+        ya."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[12].text
+      value: "Oh you did? Well, uhh... how about we talk about that tomorrow, okay?
+        I\u2019m a little cramped for time."
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[0].flagId
@@ -31046,6 +31150,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[4].flagId
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[11].flagId
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[11].flagNote
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
@@ -31057,52 +31169,104 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
-      propertyPath: dialogue._values.Array.data[0].prompts.Array.data[0].text
-      value: Nothin'
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
-      propertyPath: dialogue._values.Array.data[0].prompts.Array.data[1].text
-      value: Which town did you go to last Friday?
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
-      propertyPath: dialogue._values.Array.data[1].prompts.Array.data[0].text
-      value: "\u201CJust curious. Dick was sayin\u2019 that he didn\u2019t know anything
-        about you leaving the town, so I was just a tad confused, that\u2019s all.\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
-      propertyPath: dialogue._values.Array.data[2].prompts.Array.data[0].text
-      value: (Continue.)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
-      propertyPath: dialogue._values.Array.data[3].prompts.Array.data[0].text
-      value: " \u201COh, that\u2019s alright then! Just curious, I guess.\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
-      propertyPath: dialogue._values.Array.data[4].prompts.Array.data[0].text
-      value: "\u201CSo\u2026 which town did you go to then?\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
-      propertyPath: dialogue._values.Array.data[5].prompts.Array.data[0].text
-      value: " \u201CI see\u2026\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
-      propertyPath: dialogue._values.Array.data[6].prompts.Array.data[0].text
-      value: (End.)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
-      propertyPath: dialogue._values.Array.data[0].prompts.Array.data[1].dependant
-      value: meetDick
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
-      propertyPath: dialogue._values.Array.data[0].prompts.Array.data[0].nextNodeId
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
-      propertyPath: dialogue._values.Array.data[0].prompts.Array.data[1].nextNodeId
+      propertyPath: dialogue._values.Array.data[12].prompts.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[0].prompts.Array.data[0].text
+      value: "I\u2019m alright! I talked to Russell about Bernie\u2019s \u201Cspeech\u201D
+        at the saloon yesterday."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[0].prompts.Array.data[1].text
+      value: "Well, I just talked to Bernie\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[1].prompts.Array.data[0].text
+      value: Yeah, totally.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[2].prompts.Array.data[0].text
+      value: "Yeah\u2026 what about it?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[3].prompts.Array.data[0].text
+      value: About Russel?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[4].prompts.Array.data[0].text
+      value: (Continue)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[5].prompts.Array.data[0].text
+      value: (Continue)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[6].prompts.Array.data[0].text
+      value: Well that makes sense, Russel being a bit of a businessman and all.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[7].prompts.Array.data[0].text
+      value: I figured. Avery likes to do things all by himself whenever he can.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[8].prompts.Array.data[0].text
+      value: What?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[9].prompts.Array.data[0].text
+      value: "I see\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[10].prompts.Array.data[0].text
+      value: Yeah that is silly, haha.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[11].prompts.Array.data[0].text
+      value: "Thanks, haha. Nice talkin\u2019 to ya!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[12].prompts.Array.data[0].text
+      value: (End)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[0].prompts.Array.data[1].dependant
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[0].prompts.Array.data[0].nextNodeId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[0].prompts.Array.data[1].nextNodeId
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[6].prompts.Array.data[0].nextNodeId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[7].prompts.Array.data[0].nextNodeId
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[8].prompts.Array.data[0].nextNodeId
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[9].prompts.Array.data[0].nextNodeId
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[10].prompts.Array.data[0].nextNodeId
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[11].prompts.Array.data[0].nextNodeId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[12].prompts.Array.data[0].nextNodeId
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5342481232899399254, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
@@ -42005,6 +42169,165 @@ PrefabInstance:
       propertyPath: m_Name
       value: Terry
       objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._keys.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._keys.Array.data[9]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._keys.Array.data[10]
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._keyValues.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[9]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[10]
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[0].text
+      value: Oh hello, Ms. Wilson! What brings you in here today?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[1].text
+      value: O-Oh, of course! Do you have any leads?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[2].text
+      value: "That\u2019s quite understandable given his words at the saloon that
+        night."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[3].text
+      value: Oh I see!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[4].text
+      value: "Did you also hear about his campaign speech he gave a couple days before
+        the murder? I know you\u2019ve been pretty busy for the last two weeks so
+        I wouldn\u2019t be surprised if you didn\u2019t hear..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[5].text
+      value: "Oh dear, well, Bernie was doing his usually thing during his little
+        rally, being pompous and all\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[6].text
+      value: "\u2026 and then at one point he said \u201CI will do anything to make
+        sure I can be your mayor and lead our town to a better future. Anything.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[7].text
+      value: "It was a little concerning to say the least, but no most of the townsfolk
+        didn\u2019t think much of it until this Tuesday when Avery was killed\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[8].text
+      value: "It\u2019s the very least I can do, Ms. Wilson. I\u2019m here for you
+        and The Purple House whenever you need me."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[9].text
+      value: "O-Oh\u2026 she\u2019s over that way if you wanna talk with her."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[10].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[7].flagId
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[1].prompts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[10].prompts.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[0].prompts.Array.data[0].text
+      value: Just still going around town and asking people about what they know.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[1].prompts.Array.data[0].text
+      value: "Well, Bernie still is appearing somewhat suspicious\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[1].prompts.Array.data[1].text
+      value: "Well, I\u2019m a little curious about Bernie Martins."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[2].prompts.Array.data[0].text
+      value: Yeah, exactly.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[3].prompts.Array.data[0].text
+      value: (Continue)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[4].prompts.Array.data[0].text
+      value: "No, I actually don\u2019t know about that. What happened?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[5].prompts.Array.data[0].text
+      value: Of Course.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[6].prompts.Array.data[0].text
+      value: (Continue)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[7].prompts.Array.data[0].text
+      value: "Wow\u2026 thank you for the information, Terry."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[8].prompts.Array.data[0].text
+      value: (End)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[9].prompts.Array.data[0].text
+      value: (End.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[1].prompts.Array.data[0].nextNodeId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[2].prompts.Array.data[0].nextNodeId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[5].prompts.Array.data[0].nextNodeId
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[6].prompts.Array.data[0].nextNodeId
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[8].prompts.Array.data[0].nextNodeId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[9].prompts.Array.data[0].nextNodeId
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
 --- !u!4 &1094094715 stripped
@@ -51652,6 +51975,149 @@ PrefabInstance:
     - target: {fileID: 6074059973317527446, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
       propertyPath: m_Name
       value: Stacey
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._keys.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._keys.Array.data[6]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._keys.Array.data[7]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._keyValues.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[6]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[7]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[0].text
+      value: 'Hey, Ms. Wilson. Here to update us on the diner management changes?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[1].text
+      value: 'Ah, alright.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[2].text
+      value: "Well Terry always seems to be yapping about all the time these days,
+        that\u2019s all."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[3].text
+      value: "Apparently he\u2019s really excited at the idea of possibly inheriting
+        the place from you now that Avery is gone."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[4].text
+      value: "I would just be careful about doing that, though\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[5].text
+      value: "When I say he\u2019s really excited about it, that\u2019s kind of an
+        understatement. The lad\u2019s obsessed."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[6].text
+      value: "He said that he felt like he deserved it and all this stuff. I don\u2019t
+        know, it\u2019s just a little off-putting to me how he\u2019s saying all
+        of this so soon after Avery died\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[7].text
+      value: Not really. Same old, same old. Me and Terry managed to run the diner
+        without fighting too much
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[0].prompts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[1].prompts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[6].prompts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[7].prompts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[0].prompts.Array.data[0].text
+      value: "No, no. I\u2019m still just going around town trying to ask some questions."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[1].prompts.Array.data[0].text
+      value: You seem pretty interested in what the future of The Purple House is
+        going to be.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[1].prompts.Array.data[1].text
+      value: Any new news?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[2].prompts.Array.data[0].text
+      value: "Oh, I didn\u2019t know that. What\u2019s he talking about?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[3].prompts.Array.data[0].text
+      value: Hmm, well that might be an option, I suppose.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[4].prompts.Array.data[0].text
+      value: Why?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[5].prompts.Array.data[0].text
+      value: "Oh\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[6].prompts.Array.data[0].text
+      value: "Can\u2019t say I disagree."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[7].prompts.Array.data[0].text
+      value: "That sounds good. I guess I\u2019ll see you around then."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[0].prompts.Array.data[0].dependant
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[1].prompts.Array.data[1].nextNodeId
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[5].prompts.Array.data[0].nextNodeId
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[6].prompts.Array.data[0].nextNodeId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[7].prompts.Array.data[0].nextNodeId
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
@@ -65268,7 +65734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1721058468
 Transform:
   m_ObjectHideFlags: 0
@@ -73306,8 +73772,264 @@ PrefabInstance:
       value: Bernie
       objectReference: {fileID: 0}
     - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._keys.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._keys.Array.data[8]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._keys.Array.data[9]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._keys.Array.data[10]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._keys.Array.data[11]
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._keys.Array.data[12]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._keys.Array.data[13]
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._keyValues.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[8]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[9]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[10]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[11]
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[12]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._keyValues.Array.data[13]
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[0].text
+      value: Come in here to scold me again?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[1].text
+      value: Then what do you want?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[2].text
+      value: "Oh, so you don\u2019t think it\u2019s me anymore?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[3].text
+      value: Bahaha, of course. Have you even questioned everyone around town yet,
+        sweetheart?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[4].text
+      value: Everyone?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[5].text
+      value: "Hey, hey\u2026 don\u2019t be so mean. I\u2019m just trying to tell
+        you that people may not be tellin\u2019 you the whole truth, that\u2019s
+        all."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[6].text
+      value: Rosannah.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[7].text
+      value: "I know lil\u2019 Miss Rosannah Wilson a lot better than you think,
+        sweetie. A lot."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[8].text
+      value: "\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[9].text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[10].text
+      value: Yep, I know.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[11].text
+      value: "Because my reputation is squeaky clean, darlin\u2019. No one would
+        even believe you if you tried to spread that around."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[12].text
+      value: "Guess who the only other person is who knows about this? Or should
+        I say \u201Cwas\u201D..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[13].text
+      value: Go ahead and ask her where she was this past Tuesday next time you see
+        her.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[0].prompts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[2].prompts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[8].prompts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[9].prompts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[10].prompts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[11].prompts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[12].prompts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[13].prompts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[0].prompts.Array.data[0].text
+      value: No, Bernie.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[1].prompts.Array.data[0].text
+      value: "I wanna know what you know about Avery\u2019s murder, and if you\u2019ve
+        seen anything suspicious happen before or after."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[2].prompts.Array.data[0].text
+      value: "Of course I do, you pinhead. But I don\u2019t have enough evidence
+        right now."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[2].prompts.Array.data[1].text
+      value: I have some people on my mind.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[3].prompts.Array.data[0].text
+      value: For the most part yes.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[4].prompts.Array.data[0].text
+      value: "If you\u2019re trying to imply somethin\u2019, Bernie, let\u2019s cut
+        to the chase. I don\u2019t have time for this."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[5].prompts.Array.data[0].text
+      value: Like who?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[6].prompts.Array.data[0].text
+      value: "Rosannah is so distraught over Avery\u2019s death! Don\u2019t you dare
+        even try to spread a bunch of false rumors about her."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[7].prompts.Array.data[0].text
+      value: Oh really?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[8].prompts.Array.data[0].text
+      value: "You couldn\u2019t\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[9].prompts.Array.data[0].text
+      value: "But you\u2019re married\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[10].prompts.Array.data[0].text
+      value: "Why would you admit that? Couldn\u2019t this information ruin your
+        campaign for mayor?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[11].prompts.Array.data[0].text
+      value: Okay, okay, back to the point. Why is this even relevant?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[12].prompts.Array.data[0].text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[13].prompts.Array.data[0].text
+      value: Fine.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
       propertyPath: dialogue._values.Array.data[0].prompts.Array.data[1].dependant
       value: russelExposeBernie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[0].prompts.Array.data[0].nextNodeId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[2].prompts.Array.data[1].nextNodeId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[7].prompts.Array.data[0].nextNodeId
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[8].prompts.Array.data[0].nextNodeId
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[9].prompts.Array.data[0].nextNodeId
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[10].prompts.Array.data[0].nextNodeId
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[11].prompts.Array.data[0].nextNodeId
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[12].prompts.Array.data[0].nextNodeId
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[13].prompts.Array.data[0].nextNodeId
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1d8de325428593458f815551ba92f0a, type: 3}
@@ -82774,7 +83496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3683608468952989170
 Transform:
   m_ObjectHideFlags: 0
