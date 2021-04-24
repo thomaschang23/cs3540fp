@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44813734, g: 0.49815017, b: 0.57555115, a: 1}
+  m_IndirectSpecularColor: {r: 0.4481368, g: 0.49814922, b: 0.57554954, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3271,6 +3271,14 @@ PrefabInstance:
     - target: {fileID: 7778313284668685728, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
       propertyPath: m_Name
       value: Russel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778978611450441580, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
+      propertyPath: dialogue._values.Array.data[5].flagId
+      value: 0x1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778978611450441580, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
+      propertyPath: dialogue._values.Array.data[5].flagNote
+      value: Bernie was talking trash about Avery after death in saloon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
@@ -31690,8 +31698,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[9].flagId
+      value: 0x15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[11].flagId
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[9].flagNote
+      value: Russel really wanted to run diner with Avery, but Leslie got in the
+        way
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[11].flagNote
@@ -34820,8 +34837,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[2].flagId
+      value: 0x6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.data[7].flagId
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[11].flagId
+      value: 0x7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[2].flagNote
+      value: Was walking around the town the night of the murder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[11].flagNote
+      value: Stacey really wanted to inherit the diner
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.data[0].prompts.Array.size
@@ -43165,8 +43198,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[6].flagId
+      value: 0x2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.data[7].flagId
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
+      propertyPath: dialogue._values.Array.data[6].flagNote
+      value: "Bernie made weird speech for his mayor campaign stating that he would
+        do anything to win and \u201Cserve the people\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 1999724911636393141, guid: 8a3dd402ea1d9814d8cebc8a40e7a4cd, type: 3}
       propertyPath: dialogue._values.Array.data[1].prompts.Array.size
@@ -53258,6 +53300,10 @@ PrefabInstance:
       value: day2Stacey
       objectReference: {fileID: 0}
     - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[6].flagNote
+      value: Terry really wants to inherit the diner
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
       propertyPath: dialogue._values.Array.data[0].prompts.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -54096,68 +54142,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96435c05f5cf08744ad9f5b8dd716222, type: 3}
---- !u!1001 &1409010667
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1721058468}
-    m_Modifications:
-    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 11.664093
-      objectReference: {fileID: 0}
-    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -6.601003
-      objectReference: {fileID: 0}
-    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 12.877655
-      objectReference: {fileID: 0}
-    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.81249744
-      objectReference: {fileID: 0}
-    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.08342436
-      objectReference: {fileID: 0}
-    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.57394737
-      objectReference: {fileID: 0}
-    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.058930777
-      objectReference: {fileID: 0}
-    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 225
-      objectReference: {fileID: 0}
-    - target: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7778313284668685728, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
-      propertyPath: m_Name
-      value: Russel
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
---- !u!4 &1409010668 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7774589391164489274, guid: 230bf991bf97b3441a4c21a68a54948d, type: 3}
-  m_PrefabInstance: {fileID: 1409010667}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1410490245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57129,6 +57113,15 @@ PrefabInstance:
     - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
       propertyPath: dialogue._values.Array.data[13].text
       value: "You\u2019re welcome, darlin."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[8].flagId
+      value: 0x10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[8].flagNote
+      value: Russell was talking to him the night of the murder (venting about The
+        Purple House)
       objectReference: {fileID: 0}
     - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
       propertyPath: dialogue._values.Array.data[0].prompts.Array.size
@@ -60710,8 +60703,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[10].flagId
+      value: 0x11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[11].flagId
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
+      propertyPath: dialogue._values.Array.data[10].flagNote
+      value: "Knows she didn\u2019t go out of town on day of murder; actually just
+        spent night with Bernie (affair)"
       objectReference: {fileID: 0}
     - target: {fileID: 4715161936853501167, guid: 204da9e4f92cdf940baf4f96c32f479c, type: 3}
       propertyPath: dialogue._values.Array.data[11].flagNote
@@ -67709,7 +67711,6 @@ Transform:
   - {fileID: 500202655}
   - {fileID: 802349140}
   - {fileID: 1234933793}
-  - {fileID: 1409010668}
   - {fileID: 1094094715}
   - {fileID: 1381510301}
   - {fileID: 1930646362}
@@ -75855,8 +75856,24 @@ PrefabInstance:
         her.
       objectReference: {fileID: 0}
     - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[10].flagId
+      value: 0x3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[12].flagId
+      value: 0x4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
       propertyPath: dialogue._values.Array.data[13].flagId
       value: day2Bernie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[10].flagNote
+      value: "Has affair with Rosannah (Ro is single, Bernie isn\u2019t)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
+      propertyPath: dialogue._values.Array.data[12].flagNote
+      value: Avery found out about the affair
       objectReference: {fileID: 0}
     - target: {fileID: 8655120372591843523, guid: d1d8de325428593458f815551ba92f0a, type: 3}
       propertyPath: dialogue._values.Array.data[0].prompts.Array.size
@@ -77079,6 +77096,15 @@ PrefabInstance:
     - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
       propertyPath: dialogue._values.Array.data[9].text
       value: Well, I got some work to do in the back, so I hope that helped.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[7].flagId
+      value: 0x9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
+      propertyPath: dialogue._values.Array.data[7].flagNote
+      value: Russell and Avery were talking about the welfare of the diner a couple
+        days before murder; the diner has not been doing too well recently
       objectReference: {fileID: 0}
     - target: {fileID: 6074740132526940070, guid: acd77f55c72b59544b743ea5795cb783, type: 3}
       propertyPath: dialogue._values.Array.data[0].prompts.Array.size
