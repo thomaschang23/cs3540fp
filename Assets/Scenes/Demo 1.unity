@@ -10945,6 +10945,8 @@ MonoBehaviour:
   button3: {fileID: 1637258434}
   textScroll: {fileID: 8300000, guid: b8e035ee314749146acacf55183a1968, type: 3}
   player: {fileID: 1566584835}
+  maxFlags: 02000000060000000a0000000e000000
+  minFlags: 01000000040000000600000008000000
 --- !u!114 &342212739
 MonoBehaviour:
   m_ObjectHideFlags: 0

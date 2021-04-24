@@ -29,6 +29,16 @@ public class DialogueManager : MonoBehaviour
 
     DialoguePrompt[] availablePrompts;
 
+    public int[] maxFlags = new int[4]
+    {
+        0, 4, 6, 8
+    };
+
+    public int[] minFlags = new int[4]
+    {
+        0, 4, 6, 8
+    };
+
     private void Start()
     {
         uiManager = GetComponent<UIManager>();
@@ -100,92 +110,167 @@ public class DialogueManager : MonoBehaviour
     {
         if (tree.TryGetValue(currentNodeIdx, out DialogueNode node))
         {
-            List<string> prompts = new List<string>();
-            int childrenLength = node.prompts.Length;
-            availablePrompts = new DialoguePrompt[childrenLength];
-            int updatedLength = 0;
+            if (FlagManager.flagCount < minFlags[GameOver.currentDay] && node.text.CompareTo("Get some rest?") == 0)
+            {
+                // RUNS IF HIT MAX DAY
+                string prompt = "1. (End.)";
+                availablePrompts = new DialoguePrompt[1];
+                node.prompts[0].text = prompt;
+                node.prompts[0].nextNodeId = -1;
+                availablePrompts[0] = node.prompts[0];
 
-            for (int i = 0; i < childrenLength; i++)
-            {
-                if (node.prompts[i].dependant.Equals("") || FlagManager.CheckFlag(node.prompts[i].dependant))
-                {
-                    availablePrompts[updatedLength] = node.prompts[i];
-                    updatedLength++;
-                }
-            }
-
-            if (updatedLength > 1)
-            {
-                for (int i = 0; i < updatedLength; i++)
-                {
-                    prompts.Add((i + 1).ToString() + ". " + availablePrompts[i].text);
-                }
-            }
-            else if (updatedLength == 1)
-            {
-                if (availablePrompts[0].text == "")
-                {
-                    prompts.Add("1. (Continue.)");
-                }
-                else
-                {
-                    prompts.Add("1. " + availablePrompts[0].text);
-                }
-            }
-            else
-            {
-                prompts.Add("1. (End.)");
-            }
-
-            if (updatedLength == 3)
-            {
-                button3.gameObject.SetActive(true);
-                button2.gameObject.SetActive(true);
-                button1.gameObject.SetActive(true);
-            }
-
-            if (updatedLength < 3)
-            {
-                button3.gameObject.SetActive(false);
-                button2.gameObject.SetActive(true);
-                button1.gameObject.SetActive(true);
-            }
-
-            if (updatedLength < 2)
-            {
                 button3.gameObject.SetActive(false);
                 button2.gameObject.SetActive(false);
                 button1.gameObject.SetActive(true);
+
+                if (node.name != "")
+                {
+                    nameView.text = node.name;
+                }
+                else
+                {
+                    nameView.text = currentDefaultName;
+                }
+
+                node.text = "It's too early to go to sleep.";
+
+                Text[] promptViews = { promptView1, promptView2, promptView3 };
+
+                promptViews[0].text = prompt;
+                availablePrompts[0].nextNodeId = -1;
+
+                currentNodeIdx = -1;
+
+                StopAllCoroutines();
+                StartCoroutine(TypeSentence(dialogueView, node.text));
             }
 
-            if (node.name != "")
+            else if (FlagManager.flagCount <= maxFlags[GameOver.currentDay] || node.text.CompareTo("Get some rest?") == 0)
             {
-                nameView.text = node.name;
+                List<string> prompts = new List<string>();
+                int childrenLength = node.prompts.Length;
+                availablePrompts = new DialoguePrompt[childrenLength];
+                int updatedLength = 0;
+
+                for (int i = 0; i < childrenLength; i++)
+                {
+                    if (node.prompts[i].dependant.Equals("") || FlagManager.CheckFlag(node.prompts[i].dependant))
+                    {
+                        availablePrompts[updatedLength] = node.prompts[i];
+                        updatedLength++;
+                    }
+                }
+
+                if (updatedLength > 1)
+                {
+                    for (int i = 0; i < updatedLength; i++)
+                    {
+                        prompts.Add((i + 1).ToString() + ". " + availablePrompts[i].text);
+                    }
+                }
+                else if (updatedLength == 1)
+                {
+                    if (availablePrompts[0].text == "")
+                    {
+                        prompts.Add("1. (Continue.)");
+                    }
+                    else
+                    {
+                        prompts.Add("1. " + availablePrompts[0].text);
+                    }
+                }
+                else
+                {
+                    prompts.Add("1. (End.)");
+                }
+
+                if (updatedLength == 3)
+                {
+                    button3.gameObject.SetActive(true);
+                    button2.gameObject.SetActive(true);
+                    button1.gameObject.SetActive(true);
+                }
+
+                if (updatedLength < 3)
+                {
+                    button3.gameObject.SetActive(false);
+                    button2.gameObject.SetActive(true);
+                    button1.gameObject.SetActive(true);
+                }
+
+                if (updatedLength < 2)
+                {
+                    button3.gameObject.SetActive(false);
+                    button2.gameObject.SetActive(false);
+                    button1.gameObject.SetActive(true);
+                }
+
+                if (node.name != "")
+                {
+                    nameView.text = node.name;
+                }
+                else
+                {
+                    nameView.text = currentDefaultName;
+                }
+
+                Text[] promptViews = { promptView1, promptView2, promptView3 };
+
+                for (int i = 0; i < prompts.Count; ++i)
+                {
+                    promptViews[i].text = prompts[i];
+                }
+
+                StopAllCoroutines();
+                StartCoroutine(TypeSentence(dialogueView, node.text));
+
+                if (!node.flagId.Equals(""))
+                {
+                    if (FlagManager.SetFlag(node.flagId, node.flagNote))
+                    {
+                        FlagManager.flagCount++;
+                    }
+
+                    if (!node.flagNote.Equals(""))
+                    {
+                        noteAddedText.enabled = true;
+                        Invoke("DisableNoteAddedText", 5f);
+                    }
+                }
             }
             else
             {
-                nameView.text = currentDefaultName;
-            }
+                // RUNS IF HIT MAX DAY
+                string prompt = "1. (End.)";
+                availablePrompts = new DialoguePrompt[1];
+                node.prompts[0].text = prompt;
+                node.prompts[0].nextNodeId = -1;
+                availablePrompts[0] = node.prompts[0];
 
-            Text[] promptViews = { promptView1, promptView2, promptView3 };
+                button3.gameObject.SetActive(false);
+                button2.gameObject.SetActive(false);
+                button1.gameObject.SetActive(true);
 
-            for (int i = 0; i < prompts.Count; ++i)
-            {
-                promptViews[i].text = prompts[i];
-            } 
-
-            StopAllCoroutines();
-            StartCoroutine(TypeSentence(dialogueView, node.text));
-
-            if (!node.flagId.Equals(""))
-			{
-                FlagManager.SetFlag(node.flagId, node.flagNote);
-
-                if (!node.flagNote.Equals(""))
-				{
-                    noteAddedText.enabled = true;
-                    Invoke("DisableNoteAddedText", 5f);
+                if (node.name != "")
+                {
+                    nameView.text = node.name;
                 }
+                else
+                {
+                    nameView.text = currentDefaultName;
+                }
+
+                node.text = "It's getting late, let's talk about this some other time.";
+
+                Text[] promptViews = { promptView1, promptView2, promptView3 };
+
+                promptViews[0].text = prompt;
+                availablePrompts[0].nextNodeId = -1;
+
+                currentNodeIdx = -1;
+
+                StopAllCoroutines();
+                StartCoroutine(TypeSentence(dialogueView, node.text));
             }
         }
         else

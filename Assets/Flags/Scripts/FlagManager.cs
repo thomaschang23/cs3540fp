@@ -6,12 +6,18 @@ using RotaryHeart.Lib.SerializableDictionary;
 public static class FlagManager : object
 {
     private static List<(string, string)> setFlags = new List<(string, string)>();
+    public static int flagCount = 0;
 
-    public static void SetFlag(string flagId, string flagNote)
+    public static bool SetFlag(string flagId, string flagNote)
     {
         if (!CheckFlag(flagId))
         {
             setFlags.Add((flagId, flagNote));
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 
