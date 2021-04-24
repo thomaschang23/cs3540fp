@@ -114,15 +114,17 @@ public class DialogueManager : MonoBehaviour
             {
                 // RUNS IF HIT MAX DAY
                 string prompt = "1. (End.)";
-                availablePrompts = new DialoguePrompt[1];
-                node.prompts[0].text = prompt;
-                node.prompts[0].nextNodeId = -1;
-                availablePrompts[0] = node.prompts[0];
+                DialogueNode newNode = new DialogueNode();
+                newNode.flagId = "0";
+                newNode.prompts = new DialoguePrompt[1];
+                newNode.prompts[0] = new DialoguePrompt();
+                newNode.prompts[0].text = prompt;
+                newNode.prompts[0].nextNodeId = -1;
 
                 button3.gameObject.SetActive(false);
                 button2.gameObject.SetActive(false);
                 button1.gameObject.SetActive(true);
-
+                
                 if (node.name != "")
                 {
                     nameView.text = node.name;
@@ -132,17 +134,16 @@ public class DialogueManager : MonoBehaviour
                     nameView.text = currentDefaultName;
                 }
 
-                node.text = "It's too early to go to sleep.";
+                newNode.text = "It's too early to go to sleep.";
 
                 Text[] promptViews = { promptView1, promptView2, promptView3 };
 
                 promptViews[0].text = prompt;
-                availablePrompts[0].nextNodeId = -1;
 
                 currentNodeIdx = -1;
 
                 StopAllCoroutines();
-                StartCoroutine(TypeSentence(dialogueView, node.text));
+                StartCoroutine(TypeSentence(dialogueView, newNode.text));
             }
 
             else if (FlagManager.flagCount <= maxFlags[GameOver.currentDay] || node.text.CompareTo("Get some rest?") == 0)
