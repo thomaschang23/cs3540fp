@@ -21,6 +21,7 @@ public class GameOver : MonoBehaviour
             currentDay += 1;
             continued = GetComponentInChildren<Text>();
             continued.text = days[currentDay].name;
+            FlagManager.flagCount = 0;
         }
     }
 
