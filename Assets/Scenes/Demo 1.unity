@@ -20918,11 +20918,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.58
+      value: -0.28
       objectReference: {fileID: 0}
     - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 43.63
+      value: 43.57
       objectReference: {fileID: 0}
     - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
       propertyPath: m_LocalRotation.w
@@ -38106,6 +38106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Police Officer
       objectReference: {fileID: 0}
+    - target: {fileID: 7481054105324781979, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -38116,11 +38120,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.62
+      value: -0.315
       objectReference: {fileID: 0}
     - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 43.43
+      value: 43.367
       objectReference: {fileID: 0}
     - target: {fileID: 7484538958356319801, guid: 7d61b17cc93e5da4e92c880f51e2d718, type: 3}
       propertyPath: m_LocalRotation.w
